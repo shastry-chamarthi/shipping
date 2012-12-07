@@ -16,6 +16,9 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.modules.*',
+		'application.modules.rights.*', 
+		'application.modules.rights.components.*',
 		'application.extensions.awegen.components.*',
 		'application.extensions.awegen.*'
 	),
@@ -40,9 +43,12 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+			'class'=>'RWebUser',
 		),
 		// uncomment the following to enable URLs in path-format
-		 
+		'authManager'=>array( 
+			'class'=>'RDbAuthManager', 
+		),
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			 
@@ -79,15 +85,35 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
+				 
 				array(
 					'class'=>'CWebLogRoute',
 				),
-				*/
+				 
 			),
 		),
 	),
-
+	 
+	'modules'=>array( 
+		'rights'=>array( 
+			'superuserName'=>'admin', // Name of the role with super user privileges. 
+			'authenticatedName'=>'user', // Name of the authenticated user role. 
+			'userIdColumn'=>'user_id', // Name of the user id column in the database. 
+			'userNameColumn'=>'user_name', // Name of the user name column in the database. 
+			'enableBizRule'=>false, // Whether to enable authorization item business rules. 
+			'enableBizRuleData'=>false, // Whether to enable data for business rules. 
+			'displayDescription'=>true, // Whether to use item description instead of name. 
+			'flashSuccessKey'=>'RightsSuccess', // Key to use for setting success flash messages. 
+			'flashErrorKey'=>'RightsError', // Key to use for setting error flash messages. 
+			'install'=>false, // Whether to install rights. 
+			'baseUrl'=>'/rights', // Base URL for Rights. Change if module is nested. 
+			'layout'=>'rights.views.layouts.main', // Layout to use for displaying Rights. 
+			'appLayout'=>'application.views.layouts.main', // Application layout. 
+			'cssFile'=>'rights.css', // Style sheet file to use for Rights. 			  
+			'debug'=>true, // Whether to enable debug mode. 
+		), 
+	),
+	 
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>array(

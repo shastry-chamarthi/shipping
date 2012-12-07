@@ -398,3 +398,434 @@ Stack trace:
 #7 {main}
 REQUEST_URI=/app/index.php/awb/view
 ---
+2012/12/07 11:24:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "rights".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/rights
+---
+2012/12/07 11:25:04 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'courier.authitem' doesn't exist. The SQL statement executed was: SELECT COUNT(*) FROM AuthItem.
+in D:\phpserver\www\app\protected\modules\rights\components\RInstaller.php (180)
+in D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php (43)
+in D:\phpserver\www\app\index.php (13)
+2012/12/07 11:25:10 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'courier.authitem' doesn't exist. The SQL statement executed was: SELECT COUNT(*) FROM AuthItem.
+in D:\phpserver\www\app\protected\modules\rights\components\RInstaller.php (180)
+in D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php (43)
+in D:\phpserver\www\app\index.php (13)
+2012/12/07 11:25:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'courier.authassignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid.
+in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php (341)
+in D:\phpserver\www\app\protected\modules\rights\components\RWebUser.php (21)
+in D:\phpserver\www\app\protected\models\LoginForm.php (71)
+2012/12/07 11:25:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'courier.authassignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid' in D:\phpserver\www\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpserver\www\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpserver\www\framework\web\auth\CDbAuthManager.php(338): CDbCommand->queryAll()
+#2 D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php(341): CDbAuthManager->getAuthAssignments('admin')
+#3 D:\phpserver\www\app\protected\modules\rights\components\RWebUser.php(21): RAuthorizer->isSuperuser('admin')
+#4 D:\phpserver\www\framework\web\auth\CWebUser.php(239): RWebUser->afterLogin(false)
+#5 D:\phpserver\www\app\protected\models\LoginForm.php(71): CWebUser->login(Object(UserIdentity), 0)
+#6 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->login()
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/07 11:26:21 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'courier.authassignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid.
+in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php (341)
+in D:\phpserver\www\app\protected\modules\rights\components\RWebUser.php (21)
+in D:\phpserver\www\app\protected\models\LoginForm.php (71)
+2012/12/07 11:26:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'courier.authassignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid' in D:\phpserver\www\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpserver\www\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpserver\www\framework\web\auth\CDbAuthManager.php(338): CDbCommand->queryAll()
+#2 D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php(341): CDbAuthManager->getAuthAssignments('admin')
+#3 D:\phpserver\www\app\protected\modules\rights\components\RWebUser.php(21): RAuthorizer->isSuperuser('admin')
+#4 D:\phpserver\www\framework\web\auth\CWebUser.php(239): RWebUser->afterLogin(false)
+#5 D:\phpserver\www\app\protected\models\LoginForm.php(71): CWebUser->login(Object(UserIdentity), 0)
+#6 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->login()
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/07 11:26:28 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'courier.authitem' doesn't exist. The SQL statement executed was: SELECT COUNT(*) FROM AuthItem.
+in D:\phpserver\www\app\protected\modules\rights\components\RInstaller.php (180)
+in D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php (43)
+in D:\phpserver\www\app\index.php (13)
+2012/12/07 11:26:29 [error] [php] include(User.php): failed to open stream: No such file or directory (D:\phpserver\www\framework\YiiBase.php:423)
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(387): spl_autoload_call()
+#1 D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php(295): model()
+#2 D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#3 D:\phpserver\www\framework\web\CController.php(1145): InstallController->accessRules()
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): InstallController->filterAccessControl()
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): InstallController->runActionWithFilters()
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): InstallController->run()
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/rights/install/ready
+in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php (295)
+in D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php (61)
+in D:\phpserver\www\app\index.php (13)
+2012/12/07 11:26:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/AweModel".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('gii/AweModel')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/gii/AweModel
+---
+2012/12/07 11:26:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('gii')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/gii/
+---
+2012/12/07 11:27:41 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE id=:ycp0.
+in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php (295)
+in D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php (61)
+in D:\phpserver\www\app\index.php (13)
+2012/12/07 11:27:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE id=:ycp0' in D:\phpserver\www\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpserver\www\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php(295): CActiveRecord->findAll(Object(CDbCriteria))
+#4 D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#5 D:\phpserver\www\framework\web\CController.php(1145): InstallController->accessRules()
+#6 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#9 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('ready')
+#11 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights/install/...')
+#12 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\phpserver\www\app\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/app/index.php/rights/install/ready
+---
+2012/12/07 11:31:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#1 D:\phpserver\www\framework\web\CController.php(1145): InstallController->accessRules()
+#2 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#5 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('ready')
+#7 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights/install/...')
+#8 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpserver\www\app\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/app/index.php/rights/install/ready
+---
+2012/12/07 11:32:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#1 D:\phpserver\www\framework\web\CController.php(1145): InstallController->accessRules()
+#2 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#5 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('ready')
+#7 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights/install/...')
+#8 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpserver\www\app\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/app/index.php/rights/install/ready
+---
+2012/12/07 12:53:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#1 D:\phpserver\www\framework\web\CController.php(1145): InstallController->accessRules()
+#2 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#5 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('ready')
+#7 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights/install/...')
+#8 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpserver\www\app\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/app/index.php/rights/install/ready
+---
+2012/12/07 13:14:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#1 D:\phpserver\www\framework\web\CController.php(1145): InstallController->accessRules()
+#2 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#5 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('ready')
+#7 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights/install/...')
+#8 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpserver\www\app\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/app/index.php/rights/install/ready
+---
+2012/12/07 13:14:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#1 D:\phpserver\www\framework\web\CController.php(1145): InstallController->accessRules()
+#2 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#5 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('ready')
+#7 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights/install/...')
+#8 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpserver\www\app\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/app/index.php/rights/install/ready
+---
+2012/12/07 13:14:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#1 D:\phpserver\www\framework\web\CController.php(1145): InstallController->accessRules()
+#2 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#5 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#7 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights/install')
+#8 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpserver\www\app\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/app/index.php/rights/install
+---
+2012/12/07 13:15:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/AweModel".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('gii/AweModel')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/gii/AweModel
+HTTP_REFERER=http://localhost/app/index.php/gii/AweModel
+---
+2012/12/07 13:23:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#1 D:\phpserver\www\framework\web\CController.php(1145): InstallController->accessRules()
+#2 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#5 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#7 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights')
+#8 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpserver\www\app\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/app/index.php/rights/
+---
+2012/12/07 13:25:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#1 D:\phpserver\www\framework\web\CController.php(1145): InstallController->accessRules()
+#2 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#5 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#7 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights')
+#8 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpserver\www\app\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/app/index.php/rights/
+---
+2012/12/07 13:27:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#1 D:\phpserver\www\framework\web\CController.php(1145): InstallController->accessRules()
+#2 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#5 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#7 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights')
+#8 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpserver\www\app\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/app/index.php/rights
+---
+2012/12/07 13:28:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#1 D:\phpserver\www\framework\web\CController.php(1145): InstallController->accessRules()
+#2 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#5 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#7 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights')
+#8 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpserver\www\app\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/app/index.php/rights
+---
+2012/12/07 13:28:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#1 D:\phpserver\www\framework\web\CController.php(1145): InstallController->accessRules()
+#2 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#5 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#7 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights')
+#8 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpserver\www\app\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/app/index.php/rights
+---
+2012/12/07 13:28:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#1 D:\phpserver\www\framework\web\CController.php(1145): InstallController->accessRules()
+#2 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#5 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#7 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights')
+#8 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpserver\www\app\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/app/index.php/rights
+---
+2012/12/07 13:28:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#1 D:\phpserver\www\framework\web\CController.php(1145): InstallController->accessRules()
+#2 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#5 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#7 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights/install')
+#8 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpserver\www\app\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/app/index.php/rights/install
+---
+2012/12/07 13:28:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'There must be at least one superuser!' in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php:305
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php(61): RAuthorizer->getSuperusers()
+#1 D:\phpserver\www\framework\web\CController.php(1145): InstallController->accessRules()
+#2 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#3 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#5 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#7 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights/install')
+#8 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpserver\www\app\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/app/index.php/rights/install
+---
+2012/12/07 13:31:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\phpserver\www\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\phpserver\www\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(RWebUser), 'You are not aut...')
+#1 D:\phpserver\www\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#8 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights/install')
+#9 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpserver\www\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/app/index.php/rights/install
+---
+2012/12/07 13:35:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\phpserver\www\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\phpserver\www\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(RWebUser), 'You are not aut...')
+#1 D:\phpserver\www\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#8 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights/install')
+#9 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpserver\www\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/app/index.php/rights/install
+---
+2012/12/07 13:36:23 [error] [php] Trying to get property of non-object (D:\phpserver\www\app\protected\components\UserIdentity.php:22)
+Stack trace:
+#0 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#1 D:\phpserver\www\framework\base\CModel.php(158): CInlineValidator->validate()
+#2 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->validate()
+#3 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#4 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\phpserver\www\framework\web\CController.php(287): SiteController->runAction()
+#6 D:\phpserver\www\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 D:\phpserver\www\framework\web\CWebApplication.php(283): SiteController->run()
+#8 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/site/login
+in D:\phpserver\www\app\protected\components\UserIdentity.php (22)
+in D:\phpserver\www\app\protected\models\LoginForm.php (52)
+in D:\phpserver\www\app\protected\controllers\SiteController.php (94)
+2012/12/07 13:44:26 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.user_name" is not defined.' in D:\phpserver\www\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpserver\www\app\protected\components\UserIdentity.php(29): CComponent->__get('user_name')
+#1 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#3 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#5 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#6 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#7 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#11 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#12 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\phpserver\www\app\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/07 13:44:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1217 Cannot delete or update a parent row: a foreign key constraint fails. The SQL statement executed was: drop table if exists AuthItem.
+in D:\phpserver\www\app\protected\modules\rights\components\RInstaller.php (105)
+in D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php (90)
+in D:\phpserver\www\app\index.php (13)
+2012/12/07 13:45:45 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1217 Cannot delete or update a parent row: a foreign key constraint fails. The SQL statement executed was: drop table if exists AuthItem.
+in D:\phpserver\www\app\protected\modules\rights\components\RInstaller.php (105)
+in D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php (90)
+in D:\phpserver\www\app\index.php (13)
