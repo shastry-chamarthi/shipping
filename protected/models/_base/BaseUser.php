@@ -1,19 +1,24 @@
 <?php
 
 /**
- * This is the model base class for the table "users".
+ * This is the model base class for the table "user".
  *
- * Columns in table "users" available as properties of the model:
+ * Columns in table "user" available as properties of the model:
  
       * @property integer $user_id
-      * @property string $user_name
+      * @property string $username
       * @property string $password
       * @property string $created_on
       * @property integer $created_by
       * @property integer $modified_by
       * @property integer $role_id
+      * @property string $email
+      * @property string $lastvisit_at
+      * @property integer $superuser
+      * @property integer $status
+      * @property string $activkey
  *
- * Relations of table "users" available as properties of the model:
+ * Relations of table "user" available as properties of the model:
  * @property Account[] $accounts
  * @property Account[] $accounts1
  * @property Awb[] $awbs
@@ -24,8 +29,8 @@
  * @property PaymentType[] $paymentTypes1
  * @property TransactionTypes[] $transactionTypes
  * @property TransactionTypes[] $transactionTypes1
- * @property UserPreferences[] $userPreferences
  * @property Roles $role
+ * @property UserPreferences[] $userPreferences
  */
 abstract class BaseUser extends CActiveRecord {
     
@@ -34,20 +39,23 @@ abstract class BaseUser extends CActiveRecord {
     }
 
     public function tableName() {
-        return 'users';
+        return 'user';
     }
 
     public function rules() {
         return array(
-            array('user_name, password, created_on, created_by, modified_by, role_id', 'required'),
-            array('created_by, modified_by, role_id', 'numerical', 'integerOnly' => true),
-            array('user_name, password', 'length', 'max' => 150),
-            array('user_id, user_name, password, created_on, created_by, modified_by, role_id', 'safe', 'on' => 'search'),
+            array('username, password, created_on, created_by, modified_by, role_id, email', 'required'),
+            array('lastvisit_at, superuser, status, activkey', 'default', 'setOnEmpty' => true, 'value' => null),
+            array('created_by, modified_by, role_id, superuser, status', 'numerical', 'integerOnly' => true),
+            array('email', 'email'),
+            array('username, password, email, activkey', 'length', 'max' => 150),
+            array('lastvisit_at', 'safe'),
+            array('user_id, username, password, created_on, created_by, modified_by, role_id, email, lastvisit_at, superuser, status, activkey', 'safe', 'on' => 'search'),
         );
     }
     
     public function __toString() {
-        return (string) $this->user_name;
+        return (string) $this->username;
     }
 
     public function behaviors() {
@@ -68,20 +76,25 @@ abstract class BaseUser extends CActiveRecord {
             'paymentTypes1' => array(self::HAS_MANY, 'PaymentType', 'modified_by'),
             'transactionTypes' => array(self::HAS_MANY, 'TransactionTypes', 'created_by'),
             'transactionTypes1' => array(self::HAS_MANY, 'TransactionTypes', 'modified_by'),
-            'userPreferences' => array(self::HAS_MANY, 'UserPreferences', 'user_id'),
             'role' => array(self::BELONGS_TO, 'Roles', 'role_id'),
+            'userPreferences' => array(self::HAS_MANY, 'UserPreferences', 'user_id'),
         );
     }
 
     public function attributeLabels() {
         return array(
             'user_id' => Yii::t('app', 'User'),
-            'user_name' => Yii::t('app', 'User Name'),
+            'username' => Yii::t('app', 'Username'),
             'password' => Yii::t('app', 'Password'),
             'created_on' => Yii::t('app', 'Created On'),
             'created_by' => Yii::t('app', 'Created By'),
             'modified_by' => Yii::t('app', 'Modified By'),
             'role_id' => Yii::t('app', 'Role'),
+            'email' => Yii::t('app', 'Email'),
+            'lastvisit_at' => Yii::t('app', 'Lastvisit At'),
+            'superuser' => Yii::t('app', 'Superuser'),
+            'status' => Yii::t('app', 'Status'),
+            'activkey' => Yii::t('app', 'Activkey'),
         );
     }
 
@@ -89,12 +102,17 @@ abstract class BaseUser extends CActiveRecord {
         $criteria = new CDbCriteria;
 
         $criteria->compare('user_id', $this->user_id);
-        $criteria->compare('user_name', $this->user_name, true);
+        $criteria->compare('username', $this->username, true);
         $criteria->compare('password', $this->password, true);
         $criteria->compare('created_on', $this->created_on, true);
         $criteria->compare('created_by', $this->created_by);
         $criteria->compare('modified_by', $this->modified_by);
         $criteria->compare('role_id', $this->role_id);
+        $criteria->compare('email', $this->email, true);
+        $criteria->compare('lastvisit_at', $this->lastvisit_at, true);
+        $criteria->compare('superuser', $this->superuser);
+        $criteria->compare('status', $this->status);
+        $criteria->compare('activkey', $this->activkey, true);
 
         return new CActiveDataProvider(get_class($this), array(
                     'criteria' => $criteria,

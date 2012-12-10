@@ -31,8 +31,8 @@
 							<div class="art-nav-wrapper">
 								<div class="art-nav-inner">
 									<?php
-										$this->widget('application.components.ArtMenu', array(
-											'cls' => 'art-hmenu',
+										$this->widget('zii.widgets.CMenu', array(
+											 
 											'prelinklabel' => '<span class="l"></span><span class="r"></span><span class="t">',
 											'postlinklabel' => '</span>',
 											'items' => array(

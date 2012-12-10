@@ -829,3 +829,1978 @@ in D:\phpserver\www\app\index.php (13)
 in D:\phpserver\www\app\protected\modules\rights\components\RInstaller.php (105)
 in D:\phpserver\www\app\protected\modules\rights\controllers\InstallController.php (90)
 in D:\phpserver\www\app\index.php (13)
+2012/12/07 13:57:22 [error] [exception.CException] exception 'CException' with message 'Alias "application.components.ArtMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\phpserver\www\framework\YiiBase.php:318
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWidgetFactory.php(147): YiiBase::import('application.com...', true)
+#1 D:\phpserver\www\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.com...', Array)
+#2 D:\phpserver\www\framework\web\CBaseController.php(173): CBaseController->createWidget('application.com...', Array)
+#3 D:\phpserver\www\app\themes\biskit\views\layouts\main.php(45): CBaseController->widget('application.com...', Array)
+#4 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#5 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#6 D:\phpserver\www\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#7 D:\phpserver\www\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div class="art...')
+#8 D:\phpserver\www\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div class="art...')
+#9 D:\phpserver\www\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 D:\phpserver\www\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 D:\phpserver\www\app\themes\biskit\views\layouts\column1.php(16): CBaseController->endContent()
+#12 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#13 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#14 D:\phpserver\www\framework\web\CController.php(785): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#15 D:\phpserver\www\app\protected\controllers\SiteController.php(32): CController->render('index')
+#16 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#17 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#19 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#21 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#22 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 D:\phpserver\www\app\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/app/index.php
+---
+2012/12/10 06:23:30 [error] [exception.CException] exception 'CException' with message 'Alias "application.components.ArtMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\phpserver\www\framework\YiiBase.php:318
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWidgetFactory.php(147): YiiBase::import('application.com...', true)
+#1 D:\phpserver\www\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.com...', Array)
+#2 D:\phpserver\www\framework\web\CBaseController.php(173): CBaseController->createWidget('application.com...', Array)
+#3 D:\phpserver\www\app\themes\biskit\views\layouts\main.php(45): CBaseController->widget('application.com...', Array)
+#4 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#5 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#6 D:\phpserver\www\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#7 D:\phpserver\www\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div class="art...')
+#8 D:\phpserver\www\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div class="art...')
+#9 D:\phpserver\www\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 D:\phpserver\www\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 D:\phpserver\www\app\themes\biskit\views\layouts\column1.php(16): CBaseController->endContent()
+#12 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#13 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#14 D:\phpserver\www\framework\web\CController.php(785): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#15 D:\phpserver\www\app\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#16 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#17 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#19 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#21 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#22 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 D:\phpserver\www\app\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/app/index.php/site/login
+---
+2012/12/10 06:26:58 [error] [exception.CException] exception 'CException' with message 'Alias "application.components.CMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\phpserver\www\framework\YiiBase.php:318
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWidgetFactory.php(147): YiiBase::import('application.com...', true)
+#1 D:\phpserver\www\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.com...', Array)
+#2 D:\phpserver\www\framework\web\CBaseController.php(173): CBaseController->createWidget('application.com...', Array)
+#3 D:\phpserver\www\app\themes\biskit\views\layouts\main.php(45): CBaseController->widget('application.com...', Array)
+#4 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#5 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#6 D:\phpserver\www\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#7 D:\phpserver\www\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div class="art...')
+#8 D:\phpserver\www\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div class="art...')
+#9 D:\phpserver\www\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 D:\phpserver\www\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 D:\phpserver\www\app\themes\biskit\views\layouts\column1.php(16): CBaseController->endContent()
+#12 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#13 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#14 D:\phpserver\www\framework\web\CController.php(785): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#15 D:\phpserver\www\app\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#16 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#17 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#19 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#21 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#22 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 D:\phpserver\www\app\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/app/index.php/site/login
+---
+2012/12/10 06:26:59 [error] [exception.CException] exception 'CException' with message 'Alias "application.components.CMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\phpserver\www\framework\YiiBase.php:318
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWidgetFactory.php(147): YiiBase::import('application.com...', true)
+#1 D:\phpserver\www\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.com...', Array)
+#2 D:\phpserver\www\framework\web\CBaseController.php(173): CBaseController->createWidget('application.com...', Array)
+#3 D:\phpserver\www\app\themes\biskit\views\layouts\main.php(45): CBaseController->widget('application.com...', Array)
+#4 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#5 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#6 D:\phpserver\www\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#7 D:\phpserver\www\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div class="art...')
+#8 D:\phpserver\www\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div class="art...')
+#9 D:\phpserver\www\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 D:\phpserver\www\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 D:\phpserver\www\app\themes\biskit\views\layouts\column1.php(16): CBaseController->endContent()
+#12 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#13 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#14 D:\phpserver\www\framework\web\CController.php(785): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#15 D:\phpserver\www\app\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#16 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#17 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#19 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#21 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#22 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 D:\phpserver\www\app\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/app/index.php/site/login
+---
+2012/12/10 06:27:00 [error] [exception.CException] exception 'CException' with message 'Alias "application.components.CMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\phpserver\www\framework\YiiBase.php:318
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWidgetFactory.php(147): YiiBase::import('application.com...', true)
+#1 D:\phpserver\www\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.com...', Array)
+#2 D:\phpserver\www\framework\web\CBaseController.php(173): CBaseController->createWidget('application.com...', Array)
+#3 D:\phpserver\www\app\themes\biskit\views\layouts\main.php(45): CBaseController->widget('application.com...', Array)
+#4 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#5 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#6 D:\phpserver\www\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#7 D:\phpserver\www\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div class="art...')
+#8 D:\phpserver\www\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div class="art...')
+#9 D:\phpserver\www\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 D:\phpserver\www\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 D:\phpserver\www\app\themes\biskit\views\layouts\column1.php(16): CBaseController->endContent()
+#12 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#13 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#14 D:\phpserver\www\framework\web\CController.php(785): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#15 D:\phpserver\www\app\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#16 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#17 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#19 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#21 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#22 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 D:\phpserver\www\app\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/app/index.php/site/login
+---
+2012/12/10 06:27:07 [error] [exception.CException] exception 'CException' with message 'Alias "application.components.CMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\phpserver\www\framework\YiiBase.php:318
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWidgetFactory.php(147): YiiBase::import('application.com...', true)
+#1 D:\phpserver\www\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.com...', Array)
+#2 D:\phpserver\www\framework\web\CBaseController.php(173): CBaseController->createWidget('application.com...', Array)
+#3 D:\phpserver\www\app\themes\biskit\views\layouts\main.php(45): CBaseController->widget('application.com...', Array)
+#4 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#5 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#6 D:\phpserver\www\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#7 D:\phpserver\www\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div class="art...')
+#8 D:\phpserver\www\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div class="art...')
+#9 D:\phpserver\www\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 D:\phpserver\www\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 D:\phpserver\www\app\themes\biskit\views\layouts\column1.php(16): CBaseController->endContent()
+#12 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#13 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#14 D:\phpserver\www\framework\web\CController.php(785): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#15 D:\phpserver\www\app\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#16 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#17 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#19 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#21 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#22 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 D:\phpserver\www\app\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/app/index.php/site/login
+---
+2012/12/10 06:27:23 [error] [exception.CException] exception 'CException' with message 'Property "CMenu.cls" is not defined.' in D:\phpserver\www\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWidgetFactory.php(162): CComponent->__set('cls', 'art-hmenu')
+#1 D:\phpserver\www\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'zii.widgets.CMe...', Array)
+#2 D:\phpserver\www\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.CMe...', Array)
+#3 D:\phpserver\www\app\themes\biskit\views\layouts\main.php(45): CBaseController->widget('zii.widgets.CMe...', Array)
+#4 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#5 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#6 D:\phpserver\www\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#7 D:\phpserver\www\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div class="art...')
+#8 D:\phpserver\www\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div class="art...')
+#9 D:\phpserver\www\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 D:\phpserver\www\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 D:\phpserver\www\app\themes\biskit\views\layouts\column1.php(16): CBaseController->endContent()
+#12 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#13 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#14 D:\phpserver\www\framework\web\CController.php(785): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#15 D:\phpserver\www\app\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#16 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#17 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#19 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#21 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#22 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 D:\phpserver\www\app\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/app/index.php/site/login
+---
+2012/12/10 06:27:32 [error] [exception.CException] exception 'CException' with message 'Property "CMenu.prelinklabel" is not defined.' in D:\phpserver\www\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWidgetFactory.php(162): CComponent->__set('prelinklabel', '<span class="l"...')
+#1 D:\phpserver\www\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'zii.widgets.CMe...', Array)
+#2 D:\phpserver\www\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.CMe...', Array)
+#3 D:\phpserver\www\app\themes\biskit\views\layouts\main.php(45): CBaseController->widget('zii.widgets.CMe...', Array)
+#4 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#5 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#6 D:\phpserver\www\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#7 D:\phpserver\www\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div class="art...')
+#8 D:\phpserver\www\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div class="art...')
+#9 D:\phpserver\www\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 D:\phpserver\www\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 D:\phpserver\www\app\themes\biskit\views\layouts\column1.php(16): CBaseController->endContent()
+#12 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#13 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#14 D:\phpserver\www\framework\web\CController.php(785): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#15 D:\phpserver\www\app\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#16 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#17 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#19 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#21 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#22 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 D:\phpserver\www\app\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/app/index.php/site/login
+---
+2012/12/10 06:28:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('users')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/users
+---
+2012/12/10 06:28:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/user
+---
+2012/12/10 13:46:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usre".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('usre')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/usre
+---
+2012/12/10 13:47:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/user
+---
+2012/12/10 13:49:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usre".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('usre')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/usre
+---
+2012/12/10 13:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/user/
+---
+2012/12/10 13:49:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user/login')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/user/login
+---
+2012/12/10 13:55:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user/login')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/user/login
+---
+2012/12/10 13:55:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('users')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/users
+---
+2012/12/10 13:55:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/user
+---
+2012/12/10 13:55:31 [error] [php] Trying to get property of non-object (D:\phpserver\www\app\protected\modules\user\models\User.php:41)
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\user\models\User.php(33): model()
+#1 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): model()
+#2 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#4 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#5 D:\phpserver\www\framework\base\CModel.php(158): CInlineValidator->validate()
+#6 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->validate()
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\phpserver\www\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\phpserver\www\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): SiteController->run()
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/site/login
+in D:\phpserver\www\app\protected\modules\user\models\User.php (41)
+in D:\phpserver\www\app\protected\modules\user\models\User.php (33)
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+2012/12/10 13:57:10 [error] [php] Trying to get property of non-object (D:\phpserver\www\app\protected\modules\user\models\User.php:41)
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\user\models\User.php(33): model()
+#1 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): model()
+#2 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#4 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#5 D:\phpserver\www\framework\base\CModel.php(158): CInlineValidator->validate()
+#6 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->validate()
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\phpserver\www\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\phpserver\www\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): SiteController->run()
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/site/login
+in D:\phpserver\www\app\protected\modules\user\models\User.php (41)
+in D:\phpserver\www\app\protected\modules\user\models\User.php (33)
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+2012/12/10 14:03:01 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'courier.user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `user`.
+in D:\phpserver\www\app\protected\modules\user\models\User.php (33)
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+in D:\phpserver\www\app\protected\models\LoginForm.php (52)
+2012/12/10 14:03:01 [error] [exception.CDbException] exception 'CDbException' with message 'The table "user" for active record class "User" cannot be found in the database.' in D:\phpserver\www\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#1 D:\phpserver\www\app\protected\modules\user\models\User.php(33): CActiveRecord::model('User')
+#2 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): User::model()
+#3 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#4 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#5 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#7 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#8 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#13 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#14 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\phpserver\www\app\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:03:16 [error] [php] Trying to get property of non-object (D:\phpserver\www\app\protected\modules\user\models\User.php:80)
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\user\models\User.php(33): model()
+#1 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): model()
+#2 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#4 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#5 D:\phpserver\www\framework\base\CModel.php(158): CInlineValidator->validate()
+#6 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->validate()
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\phpserver\www\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\phpserver\www\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): SiteController->run()
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/site/login
+in D:\phpserver\www\app\protected\modules\user\models\User.php (80)
+in D:\phpserver\www\app\protected\modules\user\models\User.php (33)
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+2012/12/10 14:04:25 [error] [php] Trying to get property of non-object (D:\phpserver\www\app\protected\modules\user\models\User.php:41)
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\user\models\User.php(33): model()
+#1 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): model()
+#2 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#4 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#5 D:\phpserver\www\framework\base\CModel.php(158): CInlineValidator->validate()
+#6 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->validate()
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\phpserver\www\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\phpserver\www\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): SiteController->run()
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/site/login
+in D:\phpserver\www\app\protected\modules\user\models\User.php (41)
+in D:\phpserver\www\app\protected\modules\user\models\User.php (33)
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+2012/12/10 14:07:13 [error] [php] Trying to get property of non-object (D:\phpserver\www\app\protected\modules\user\models\User.php:41)
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\user\models\User.php(33): model()
+#1 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): model()
+#2 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#4 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#5 D:\phpserver\www\framework\base\CModel.php(158): CInlineValidator->validate()
+#6 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->validate()
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\phpserver\www\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\phpserver\www\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): SiteController->run()
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/site/login
+in D:\phpserver\www\app\protected\modules\user\models\User.php (41)
+in D:\phpserver\www\app\protected\modules\user\models\User.php (33)
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+2012/12/10 14:07:15 [error] [php] Trying to get property of non-object (D:\phpserver\www\app\protected\modules\user\models\User.php:41)
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\user\models\User.php(33): model()
+#1 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): model()
+#2 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#4 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#5 D:\phpserver\www\framework\base\CModel.php(158): CInlineValidator->validate()
+#6 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->validate()
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\phpserver\www\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\phpserver\www\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): SiteController->run()
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/site/login
+in D:\phpserver\www\app\protected\modules\user\models\User.php (41)
+in D:\phpserver\www\app\protected\modules\user\models\User.php (33)
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+2012/12/10 14:07:19 [error] [php] Trying to get property of non-object (D:\phpserver\www\app\protected\modules\user\models\User.php:41)
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\user\models\User.php(33): model()
+#1 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): model()
+#2 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#4 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#5 D:\phpserver\www\framework\base\CModel.php(158): CInlineValidator->validate()
+#6 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->validate()
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\phpserver\www\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\phpserver\www\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): SiteController->run()
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/site/login
+in D:\phpserver\www\app\protected\modules\user\models\User.php (41)
+in D:\phpserver\www\app\protected\modules\user\models\User.php (33)
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+2012/12/10 14:07:39 [error] [php] Trying to get property of non-object (D:\phpserver\www\app\protected\modules\user\models\User.php:41)
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\user\models\User.php(33): model()
+#1 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): model()
+#2 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#4 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#5 D:\phpserver\www\framework\base\CModel.php(158): CInlineValidator->validate()
+#6 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->validate()
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\phpserver\www\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\phpserver\www\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): SiteController->run()
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/site/login
+in D:\phpserver\www\app\protected\modules\user\models\User.php (41)
+in D:\phpserver\www\app\protected\modules\user\models\User.php (33)
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+2012/12/10 14:08:04 [error] [php] Trying to get property of non-object (D:\phpserver\www\app\protected\modules\user\models\User.php:41)
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\user\models\User.php(33): model()
+#1 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): model()
+#2 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#4 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#5 D:\phpserver\www\framework\base\CModel.php(158): CInlineValidator->validate()
+#6 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->validate()
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\phpserver\www\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\phpserver\www\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): SiteController->run()
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/site/login
+in D:\phpserver\www\app\protected\modules\user\models\User.php (41)
+in D:\phpserver\www\app\protected\modules\user\models\User.php (33)
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+2012/12/10 14:08:06 [error] [php] Trying to get property of non-object (D:\phpserver\www\app\protected\modules\user\models\User.php:41)
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\user\models\User.php(33): model()
+#1 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): model()
+#2 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#4 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#5 D:\phpserver\www\framework\base\CModel.php(158): CInlineValidator->validate()
+#6 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->validate()
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\phpserver\www\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\phpserver\www\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): SiteController->run()
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/site/login
+in D:\phpserver\www\app\protected\modules\user\models\User.php (41)
+in D:\phpserver\www\app\protected\modules\user\models\User.php (33)
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+2012/12/10 14:08:49 [error] [php] Trying to get property of non-object (D:\phpserver\www\app\protected\modules\user\models\User.php:41)
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\user\models\User.php(33): model()
+#1 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): model()
+#2 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#4 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#5 D:\phpserver\www\framework\base\CModel.php(158): CInlineValidator->validate()
+#6 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->validate()
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\phpserver\www\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\phpserver\www\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): SiteController->run()
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/site/login
+in D:\phpserver\www\app\protected\modules\user\models\User.php (41)
+in D:\phpserver\www\app\protected\modules\user\models\User.php (33)
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+2012/12/10 14:08:53 [error] [php] Trying to get property of non-object (D:\phpserver\www\app\protected\modules\user\models\User.php:41)
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\user\models\User.php(33): model()
+#1 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): model()
+#2 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#4 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#5 D:\phpserver\www\framework\base\CModel.php(158): CInlineValidator->validate()
+#6 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->validate()
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\phpserver\www\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\phpserver\www\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): SiteController->run()
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/site/login
+in D:\phpserver\www\app\protected\modules\user\models\User.php (41)
+in D:\phpserver\www\app\protected\modules\user\models\User.php (33)
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+2012/12/10 14:09:09 [error] [php] Trying to get property of non-object (D:\phpserver\www\app\protected\modules\user\models\User.php:41)
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\user\models\User.php(33): model()
+#1 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): model()
+#2 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#4 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#5 D:\phpserver\www\framework\base\CModel.php(158): CInlineValidator->validate()
+#6 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->validate()
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\phpserver\www\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\phpserver\www\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): SiteController->run()
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/site/login
+in D:\phpserver\www\app\protected\modules\user\models\User.php (41)
+in D:\phpserver\www\app\protected\modules\user\models\User.php (33)
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+2012/12/10 14:10:51 [error] [php] Trying to get property of non-object (D:\phpserver\www\app\protected\modules\user\models\User.php:41)
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\user\models\User.php(33): model()
+#1 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): model()
+#2 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#4 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#5 D:\phpserver\www\framework\base\CModel.php(158): CInlineValidator->validate()
+#6 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->validate()
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\phpserver\www\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\phpserver\www\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): SiteController->run()
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/site/login
+in D:\phpserver\www\app\protected\modules\user\models\User.php (41)
+in D:\phpserver\www\app\protected\modules\user\models\User.php (33)
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+2012/12/10 14:11:59 [error] [php] Trying to get property of non-object (D:\phpserver\www\app\protected\modules\user\models\User.php:41)
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\user\models\User.php(33): model()
+#1 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): model()
+#2 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#4 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#5 D:\phpserver\www\framework\base\CModel.php(158): CInlineValidator->validate()
+#6 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->validate()
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\phpserver\www\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\phpserver\www\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): SiteController->run()
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/site/login
+in D:\phpserver\www\app\protected\modules\user\models\User.php (41)
+in D:\phpserver\www\app\protected\modules\user\models\User.php (33)
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+2012/12/10 14:12:06 [error] [php] Trying to get property of non-object (D:\phpserver\www\app\protected\modules\user\models\User.php:41)
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\user\models\User.php(33): model()
+#1 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): model()
+#2 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#4 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#5 D:\phpserver\www\framework\base\CModel.php(158): CInlineValidator->validate()
+#6 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->validate()
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\phpserver\www\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\phpserver\www\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): SiteController->run()
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/site/login
+in D:\phpserver\www\app\protected\modules\user\models\User.php (41)
+in D:\phpserver\www\app\protected\modules\user\models\User.php (33)
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+2012/12/10 14:12:22 [error] [php] Trying to get property of non-object (D:\phpserver\www\app\protected\modules\user\models\User.php:41)
+Stack trace:
+#0 D:\phpserver\www\app\protected\modules\user\models\User.php(33): model()
+#1 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): model()
+#2 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#4 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#5 D:\phpserver\www\framework\base\CModel.php(158): CInlineValidator->validate()
+#6 D:\phpserver\www\app\protected\controllers\SiteController.php(94): LoginForm->validate()
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\phpserver\www\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\phpserver\www\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): SiteController->run()
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/site/login
+in D:\phpserver\www\app\protected\modules\user\models\User.php (41)
+in D:\phpserver\www\app\protected\modules\user\models\User.php (33)
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+2012/12/10 14:12:40 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.end" is not defined.' in D:\phpserver\www\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpserver\www\framework\base\CModule.php(106): CComponent->__get('end')
+#1 D:\phpserver\www\app\protected\modules\user\models\User.php(42): CModule->__get('end')
+#2 D:\phpserver\www\framework\db\ar\CActiveRecord.php(2310): User->tableName()
+#3 D:\phpserver\www\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#4 D:\phpserver\www\app\protected\modules\user\models\User.php(33): CActiveRecord::model('User')
+#5 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): User::model()
+#6 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#11 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#16 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpserver\www\app\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:15:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'courier.tbl_profiles' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_profiles`.
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+in D:\phpserver\www\app\protected\models\LoginForm.php (52)
+in D:\phpserver\www\app\protected\controllers\SiteController.php (94)
+2012/12/10 14:15:14 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{profiles}}" for active record class "Profile" cannot be found in the database.' in D:\phpserver\www\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Profile))
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(220): CActiveRecord::model('Profile')
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(280): CActiveFinder->buildJoinTree(Object(CJoinElement), 'profile')
+#3 D:\phpserver\www\framework\db\ar\CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1295): CActiveFinder->__construct(Object(User), Array)
+#5 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#6 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#7 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#8 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#9 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#10 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#11 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#12 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#13 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#15 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#17 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#18 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 D:\phpserver\www\app\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:15:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'courier.user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `user`.
+in D:\phpserver\www\app\protected\modules\user\models\User.php (33)
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+in D:\phpserver\www\app\protected\models\LoginForm.php (52)
+2012/12/10 14:15:45 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{user}}" for active record class "User" cannot be found in the database.' in D:\phpserver\www\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#1 D:\phpserver\www\app\protected\modules\user\models\User.php(33): CActiveRecord::model('User')
+#2 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): User::model()
+#3 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#4 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#5 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#7 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#8 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#13 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#14 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\phpserver\www\app\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:16:18 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'courier.profiles' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `profiles`.
+in D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php (27)
+in D:\phpserver\www\app\protected\models\LoginForm.php (52)
+in D:\phpserver\www\app\protected\controllers\SiteController.php (94)
+2012/12/10 14:16:18 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{profiles}}" for active record class "Profile" cannot be found in the database.' in D:\phpserver\www\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Profile))
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(220): CActiveRecord::model('Profile')
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(280): CActiveFinder->buildJoinTree(Object(CJoinElement), 'profile')
+#3 D:\phpserver\www\framework\db\ar\CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1295): CActiveFinder->__construct(Object(User), Array)
+#5 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#6 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#7 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#8 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#9 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#10 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#11 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#12 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#13 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#15 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#17 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#18 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 D:\phpserver\www\app\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:19:31 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "User" is trying to select an invalid column "user.create_at". Note, the column must exist in the table or be an expression with alias.' in D:\phpserver\www\framework\db\ar\CActiveFinder.php:940
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveFinder.php(1232): CJoinElement->getColumnSelect(Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(418): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#3 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), false)
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#5 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#6 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#11 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#16 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpserver\www\app\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:22:10 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "User" is trying to select an invalid column "user.create_at". Note, the column must exist in the table or be an expression with alias.' in D:\phpserver\www\framework\db\ar\CActiveFinder.php:940
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveFinder.php(1232): CJoinElement->getColumnSelect(Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(418): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#3 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), false)
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#5 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#6 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#11 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#16 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpserver\www\app\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:22:58 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "User" is trying to select an invalid column "user.id". Note, the column must exist in the table or be an expression with alias.' in D:\phpserver\www\framework\db\ar\CActiveFinder.php:940
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveFinder.php(1232): CJoinElement->getColumnSelect(Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(418): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#3 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), false)
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#5 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#6 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#11 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#16 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpserver\www\app\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:24:12 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "User" is trying to select an invalid column "user.id". Note, the column must exist in the table or be an expression with alias.' in D:\phpserver\www\framework\db\ar\CActiveFinder.php:940
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveFinder.php(1232): CJoinElement->getColumnSelect(Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(418): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#3 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), false)
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#5 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#6 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#11 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#16 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpserver\www\app\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:25:06 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "User" is trying to select an invalid column "user.id". Note, the column must exist in the table or be an expression with alias.' in D:\phpserver\www\framework\db\ar\CActiveFinder.php:940
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveFinder.php(1232): CJoinElement->getColumnSelect(Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(418): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#3 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), false)
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#5 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#6 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#11 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#16 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpserver\www\app\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:26:03 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "User" is trying to select an invalid column "user.id". Note, the column must exist in the table or be an expression with alias.' in D:\phpserver\www\framework\db\ar\CActiveFinder.php:940
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveFinder.php(1232): CJoinElement->getColumnSelect(Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(418): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#3 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), false)
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#5 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#6 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#11 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#16 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpserver\www\app\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:27:02 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "User" is trying to select an invalid column "user.id". Note, the column must exist in the table or be an expression with alias.' in D:\phpserver\www\framework\db\ar\CActiveFinder.php:940
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveFinder.php(1232): CJoinElement->getColumnSelect(Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(418): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#3 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), false)
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#5 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#6 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#11 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#16 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpserver\www\app\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:28:56 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "User" is trying to select an invalid column "user.id". Note, the column must exist in the table or be an expression with alias.' in D:\phpserver\www\framework\db\ar\CActiveFinder.php:940
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveFinder.php(1232): CJoinElement->getColumnSelect(Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(418): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#3 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), false)
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#5 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#6 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#11 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#16 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpserver\www\app\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:29:27 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "User" is trying to select an invalid column "user.id". Note, the column must exist in the table or be an expression with alias.' in D:\phpserver\www\framework\db\ar\CActiveFinder.php:940
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveFinder.php(1232): CJoinElement->getColumnSelect(Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(418): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#3 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), false)
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#5 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#6 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#11 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#16 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpserver\www\app\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:30:00 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "User" is trying to select an invalid column "user.id". Note, the column must exist in the table or be an expression with alias.' in D:\phpserver\www\framework\db\ar\CActiveFinder.php:940
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveFinder.php(1232): CJoinElement->getColumnSelect(Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(418): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#3 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), false)
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#5 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#6 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#11 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#16 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpserver\www\app\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:30:12 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "User" is trying to select an invalid column "user.create_at". Note, the column must exist in the table or be an expression with alias.' in D:\phpserver\www\framework\db\ar\CActiveFinder.php:940
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveFinder.php(1232): CJoinElement->getColumnSelect(Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(418): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#3 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), false)
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#5 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#6 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#11 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#16 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpserver\www\app\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:30:26 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "User" is trying to select an invalid column "user.superuser". Note, the column must exist in the table or be an expression with alias.' in D:\phpserver\www\framework\db\ar\CActiveFinder.php:940
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveFinder.php(1232): CJoinElement->getColumnSelect(Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(418): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#3 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), false)
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#5 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#6 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#11 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#16 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpserver\www\app\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:30:38 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "User" is trying to select an invalid column "user.status". Note, the column must exist in the table or be an expression with alias.' in D:\phpserver\www\framework\db\ar\CActiveFinder.php:940
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveFinder.php(1232): CJoinElement->getColumnSelect(Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(418): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#3 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), false)
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#5 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#6 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#11 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#16 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpserver\www\app\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:30:47 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "User" is trying to select an invalid column "user.superuser". Note, the column must exist in the table or be an expression with alias.' in D:\phpserver\www\framework\db\ar\CActiveFinder.php:940
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveFinder.php(1232): CJoinElement->getColumnSelect(Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(418): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#3 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), false)
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#5 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#6 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#11 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#16 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpserver\www\app\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:32:12 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "User" is trying to select an invalid column "user.superuser". Note, the column must exist in the table or be an expression with alias.' in D:\phpserver\www\framework\db\ar\CActiveFinder.php:940
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveFinder.php(1232): CJoinElement->getColumnSelect(Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(418): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#3 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), false)
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#5 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#6 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#11 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#16 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpserver\www\app\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:32:23 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "User" is trying to select an invalid column "activkey". Note, the column must exist in the table or be an expression with alias.' in D:\phpserver\www\framework\db\ar\CActiveFinder.php:940
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveFinder.php(1232): CJoinElement->getColumnSelect(Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(418): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#3 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), false)
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#5 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#6 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#11 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#16 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpserver\www\app\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:33:57 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "User" is trying to select an invalid column "create_at". Note, the column must exist in the table or be an expression with alias.' in D:\phpserver\www\framework\db\ar\CActiveFinder.php:940
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveFinder.php(1232): CJoinElement->getColumnSelect(Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(418): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#3 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), false)
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#5 D:\phpserver\www\app\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#6 D:\phpserver\www\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#7 D:\phpserver\www\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#8 D:\phpserver\www\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 D:\phpserver\www\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#10 D:\phpserver\www\app\protected\controllers\SiteController.php(94): CModel->validate()
+#11 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#12 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('login')
+#16 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#17 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpserver\www\app\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/app/index.php/site/login
+HTTP_REFERER=http://localhost/app/index.php/site/login
+---
+2012/12/10 14:39:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'user_id' in where clause is ambiguous. The SQL statement executed was: SELECT `user`.`user_id` AS `t0_c0`, `user`.`username` AS `t0_c1`, `user`.`email` AS `t0_c8`, `user`.`created_on` AS `t0_c3`, `user`.`lastvisit_at` AS `t0_c9`, `user`.`superuser` AS `t0_c10`, `user`.`status` AS `t0_c11`, `profile`.`user_id` AS `t1_c0`, `profile`.`lastname` AS `t1_c1`, `profile`.`firstname` AS `t1_c2` FROM `user` `user`  LEFT OUTER JOIN `profiles` `profile` ON (`profile`.`user_id`=`user`.`user_id`)  WHERE (user_id=:ycp0).
+in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php (295)
+in D:\phpserver\www\app\protected\modules\rights\controllers\AssignmentController.php (51)
+in D:\phpserver\www\app\index.php (13)
+2012/12/10 14:39:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'user_id' in where clause is ambiguous. The SQL statement executed was: SELECT `user`.`user_id` AS `t0_c0`, `user`.`username` AS `t0_c1`, `user`.`email` AS `t0_c8`, `user`.`created_on` AS `t0_c3`, `user`.`lastvisit_at` AS `t0_c9`, `user`.`superuser` AS `t0_c10`, `user`.`status` AS `t0_c11`, `profile`.`user_id` AS `t1_c0`, `profile`.`lastname` AS `t1_c1`, `profile`.`firstname` AS `t1_c2` FROM `user` `user`  LEFT OUTER JOIN `profiles` `profile` ON (`profile`.`user_id`=`user`.`user_id`)  WHERE (user_id=:ycp0)' in D:\phpserver\www\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpserver\www\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(784): CDbCommand->queryAll()
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(422): CJoinElement->runQuery(Object(CJoinQuery))
+#3 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), true)
+#5 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#6 D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php(295): CActiveRecord->findAll(Object(CDbCriteria))
+#7 D:\phpserver\www\app\protected\modules\rights\controllers\AssignmentController.php(51): RAuthorizer->getSuperusers()
+#8 D:\phpserver\www\framework\web\CController.php(1145): AssignmentController->accessRules()
+#9 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#12 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#14 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights')
+#15 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpserver\www\app\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/app/index.php/rights
+---
+2012/12/10 14:39:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'user_id' in where clause is ambiguous. The SQL statement executed was: SELECT `user`.`user_id` AS `t0_c0`, `user`.`username` AS `t0_c1`, `user`.`email` AS `t0_c8`, `user`.`created_on` AS `t0_c3`, `user`.`lastvisit_at` AS `t0_c9`, `user`.`superuser` AS `t0_c10`, `user`.`status` AS `t0_c11`, `profile`.`user_id` AS `t1_c0`, `profile`.`lastname` AS `t1_c1`, `profile`.`firstname` AS `t1_c2` FROM `user` `user`  LEFT OUTER JOIN `profiles` `profile` ON (`profile`.`user_id`=`user`.`user_id`)  WHERE (user_id=:ycp0).
+in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php (295)
+in D:\phpserver\www\app\protected\modules\rights\controllers\AssignmentController.php (51)
+in D:\phpserver\www\app\index.php (13)
+2012/12/10 14:39:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'user_id' in where clause is ambiguous. The SQL statement executed was: SELECT `user`.`user_id` AS `t0_c0`, `user`.`username` AS `t0_c1`, `user`.`email` AS `t0_c8`, `user`.`created_on` AS `t0_c3`, `user`.`lastvisit_at` AS `t0_c9`, `user`.`superuser` AS `t0_c10`, `user`.`status` AS `t0_c11`, `profile`.`user_id` AS `t1_c0`, `profile`.`lastname` AS `t1_c1`, `profile`.`firstname` AS `t1_c2` FROM `user` `user`  LEFT OUTER JOIN `profiles` `profile` ON (`profile`.`user_id`=`user`.`user_id`)  WHERE (user_id=:ycp0)' in D:\phpserver\www\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpserver\www\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(784): CDbCommand->queryAll()
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(422): CJoinElement->runQuery(Object(CJoinQuery))
+#3 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), true)
+#5 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#6 D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php(295): CActiveRecord->findAll(Object(CDbCriteria))
+#7 D:\phpserver\www\app\protected\modules\rights\controllers\AssignmentController.php(51): RAuthorizer->getSuperusers()
+#8 D:\phpserver\www\framework\web\CController.php(1145): AssignmentController->accessRules()
+#9 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#12 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#14 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights')
+#15 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpserver\www\app\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/app/index.php/rights
+---
+2012/12/10 14:40:29 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'user_id' in where clause is ambiguous. The SQL statement executed was: SELECT `user`.`user_id` AS `t0_c0`, `user`.`username` AS `t0_c1`, `user`.`email` AS `t0_c8`, `user`.`created_on` AS `t0_c3`, `user`.`lastvisit_at` AS `t0_c9`, `user`.`superuser` AS `t0_c10`, `user`.`status` AS `t0_c11`, `profile`.`user_id` AS `t1_c0`, `profile`.`lastname` AS `t1_c1`, `profile`.`firstname` AS `t1_c2` FROM `user` `user`  LEFT OUTER JOIN `profiles` `profile` ON (`profile`.`user_id`=`user`.`user_id`)  WHERE (user_id=:ycp0).
+in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php (295)
+in D:\phpserver\www\app\protected\modules\rights\controllers\AssignmentController.php (51)
+in D:\phpserver\www\app\index.php (13)
+2012/12/10 14:40:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'user_id' in where clause is ambiguous. The SQL statement executed was: SELECT `user`.`user_id` AS `t0_c0`, `user`.`username` AS `t0_c1`, `user`.`email` AS `t0_c8`, `user`.`created_on` AS `t0_c3`, `user`.`lastvisit_at` AS `t0_c9`, `user`.`superuser` AS `t0_c10`, `user`.`status` AS `t0_c11`, `profile`.`user_id` AS `t1_c0`, `profile`.`lastname` AS `t1_c1`, `profile`.`firstname` AS `t1_c2` FROM `user` `user`  LEFT OUTER JOIN `profiles` `profile` ON (`profile`.`user_id`=`user`.`user_id`)  WHERE (user_id=:ycp0)' in D:\phpserver\www\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpserver\www\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(784): CDbCommand->queryAll()
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(422): CJoinElement->runQuery(Object(CJoinQuery))
+#3 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), true)
+#5 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#6 D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php(295): CActiveRecord->findAll(Object(CDbCriteria))
+#7 D:\phpserver\www\app\protected\modules\rights\controllers\AssignmentController.php(51): RAuthorizer->getSuperusers()
+#8 D:\phpserver\www\framework\web\CController.php(1145): AssignmentController->accessRules()
+#9 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#12 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#14 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights')
+#15 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpserver\www\app\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/app/index.php/rights
+---
+2012/12/10 14:40:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'user_id' in where clause is ambiguous. The SQL statement executed was: SELECT `user`.`user_id` AS `t0_c0`, `user`.`username` AS `t0_c1`, `user`.`email` AS `t0_c8`, `user`.`created_on` AS `t0_c3`, `user`.`lastvisit_at` AS `t0_c9`, `user`.`superuser` AS `t0_c10`, `user`.`status` AS `t0_c11`, `profile`.`user_id` AS `t1_c0`, `profile`.`lastname` AS `t1_c1`, `profile`.`firstname` AS `t1_c2` FROM `user` `user`  LEFT OUTER JOIN `profiles` `profile` ON (`profile`.`user_id`=`user`.`user_id`)  WHERE (user_id=:ycp0).
+in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php (295)
+in D:\phpserver\www\app\protected\modules\rights\controllers\AssignmentController.php (51)
+in D:\phpserver\www\app\index.php (13)
+2012/12/10 14:40:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'user_id' in where clause is ambiguous. The SQL statement executed was: SELECT `user`.`user_id` AS `t0_c0`, `user`.`username` AS `t0_c1`, `user`.`email` AS `t0_c8`, `user`.`created_on` AS `t0_c3`, `user`.`lastvisit_at` AS `t0_c9`, `user`.`superuser` AS `t0_c10`, `user`.`status` AS `t0_c11`, `profile`.`user_id` AS `t1_c0`, `profile`.`lastname` AS `t1_c1`, `profile`.`firstname` AS `t1_c2` FROM `user` `user`  LEFT OUTER JOIN `profiles` `profile` ON (`profile`.`user_id`=`user`.`user_id`)  WHERE (user_id=:ycp0)' in D:\phpserver\www\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpserver\www\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(784): CDbCommand->queryAll()
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(422): CJoinElement->runQuery(Object(CJoinQuery))
+#3 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), true)
+#5 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#6 D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php(295): CActiveRecord->findAll(Object(CDbCriteria))
+#7 D:\phpserver\www\app\protected\modules\rights\controllers\AssignmentController.php(51): RAuthorizer->getSuperusers()
+#8 D:\phpserver\www\framework\web\CController.php(1145): AssignmentController->accessRules()
+#9 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#12 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#14 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights')
+#15 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpserver\www\app\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/app/index.php/rights
+---
+2012/12/10 14:42:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'user_id' in where clause is ambiguous. The SQL statement executed was: SELECT `user`.`user_id` AS `t0_c0`, `user`.`username` AS `t0_c1`, `user`.`email` AS `t0_c8`, `user`.`created_on` AS `t0_c3`, `user`.`lastvisit_at` AS `t0_c9`, `user`.`superuser` AS `t0_c10`, `user`.`status` AS `t0_c11`, `profile`.`user_id` AS `t1_c0`, `profile`.`lastname` AS `t1_c1`, `profile`.`firstname` AS `t1_c2` FROM `user` `user`  LEFT OUTER JOIN `profiles` `profile` ON (`profile`.`user_id`=`user`.`user_id`)  WHERE (user_id=:ycp0).
+in D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php (295)
+in D:\phpserver\www\app\protected\modules\rights\controllers\AssignmentController.php (51)
+in D:\phpserver\www\app\index.php (13)
+2012/12/10 14:42:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'user_id' in where clause is ambiguous. The SQL statement executed was: SELECT `user`.`user_id` AS `t0_c0`, `user`.`username` AS `t0_c1`, `user`.`email` AS `t0_c8`, `user`.`created_on` AS `t0_c3`, `user`.`lastvisit_at` AS `t0_c9`, `user`.`superuser` AS `t0_c10`, `user`.`status` AS `t0_c11`, `profile`.`user_id` AS `t1_c0`, `profile`.`lastname` AS `t1_c1`, `profile`.`firstname` AS `t1_c2` FROM `user` `user`  LEFT OUTER JOIN `profiles` `profile` ON (`profile`.`user_id`=`user`.`user_id`)  WHERE (user_id=:ycp0)' in D:\phpserver\www\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpserver\www\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(784): CDbCommand->queryAll()
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(422): CJoinElement->runQuery(Object(CJoinQuery))
+#3 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#4 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), true)
+#5 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#6 D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php(295): CActiveRecord->findAll(Object(CDbCriteria))
+#7 D:\phpserver\www\app\protected\modules\rights\controllers\AssignmentController.php(51): RAuthorizer->getSuperusers()
+#8 D:\phpserver\www\framework\web\CController.php(1145): AssignmentController->accessRules()
+#9 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#12 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#14 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights')
+#15 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpserver\www\app\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/app/index.php/rights
+---
+2012/12/10 15:01:30 [error] [exception.CDbException] exception 'CDbException' with message 'The relation "profile" in active record class "User" is specified with an invalid foreign key "user_id". There is no such column in the table "profiles".' in D:\phpserver\www\framework\db\ar\CActiveFinder.php:1066
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveFinder.php(1037): CJoinElement->joinOneMany(Object(CJoinElement), Array, Object(CJoinElement), Object(CJoinElement))
+#1 D:\phpserver\www\framework\db\ar\CActiveFinder.php(1266): CJoinElement->getJoinCondition()
+#2 D:\phpserver\www\framework\db\ar\CActiveFinder.php(771): CJoinQuery->join(Object(CJoinElement))
+#3 D:\phpserver\www\framework\db\ar\CActiveFinder.php(420): CJoinElement->buildQuery(Object(CJoinQuery))
+#4 D:\phpserver\www\framework\db\ar\CActiveFinder.php(70): CJoinElement->find(Object(CDbCriteria))
+#5 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1296): CActiveFinder->query(Object(CDbCriteria), true)
+#6 D:\phpserver\www\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#7 D:\phpserver\www\app\protected\modules\rights\components\RAuthorizer.php(296): CActiveRecord->findAll(Object(CDbCriteria))
+#8 D:\phpserver\www\app\protected\modules\rights\controllers\AssignmentController.php(51): RAuthorizer->getSuperusers()
+#9 D:\phpserver\www\framework\web\CController.php(1145): AssignmentController->accessRules()
+#10 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#15 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('rights')
+#16 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\phpserver\www\app\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/app/index.php/rights
+---
+2012/12/10 15:02:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/add".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user/add')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/user/add
+---
+2012/12/10 15:02:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/create".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user/create')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/user/create
+---
+2012/12/10 15:02:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users/create".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('users/create')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/users/create
+---
+2012/12/10 15:02:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('users')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/users/
+---
+2012/12/10 15:03:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'courier.profiles_fields' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `profiles_fields`.
+in D:\phpserver\www\app\protected\modules\user\models\ProfileField.php (39)
+in D:\phpserver\www\app\protected\modules\user\views\profile\profile.php (27)
+in D:\phpserver\www\app\protected\modules\user\controllers\ProfileController.php (21)
+2012/12/10 15:03:47 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{profiles_fields}}" for active record class "ProfileField" cannot be found in the database.' in D:\phpserver\www\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(ProfileField))
+#1 D:\phpserver\www\app\protected\modules\user\models\ProfileField.php(39): CActiveRecord::model('ProfileField')
+#2 D:\phpserver\www\app\protected\modules\user\views\profile\profile.php(27): ProfileField::model()
+#3 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#4 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#5 D:\phpserver\www\framework\web\CController.php(870): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#6 D:\phpserver\www\framework\web\CController.php(783): CController->renderPartial('profile', Array, true)
+#7 D:\phpserver\www\app\protected\modules\user\controllers\ProfileController.php(21): CController->render('profile', Array)
+#8 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): ProfileController->actionProfile()
+#9 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#13 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user/profile')
+#14 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\phpserver\www\app\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/app/index.php/user/profile
+---
+2012/12/10 15:04:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'courier.profiles_fields' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `profiles_fields`.
+in D:\phpserver\www\app\protected\modules\user\models\ProfileField.php (39)
+in D:\phpserver\www\app\protected\modules\user\views\profile\profile.php (27)
+in D:\phpserver\www\app\protected\modules\user\controllers\ProfileController.php (21)
+2012/12/10 15:04:28 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{profiles_fields}}" for active record class "ProfileField" cannot be found in the database.' in D:\phpserver\www\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(ProfileField))
+#1 D:\phpserver\www\app\protected\modules\user\models\ProfileField.php(39): CActiveRecord::model('ProfileField')
+#2 D:\phpserver\www\app\protected\modules\user\views\profile\profile.php(27): ProfileField::model()
+#3 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#4 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#5 D:\phpserver\www\framework\web\CController.php(870): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#6 D:\phpserver\www\framework\web\CController.php(783): CController->renderPartial('profile', Array, true)
+#7 D:\phpserver\www\app\protected\modules\user\controllers\ProfileController.php(21): CController->render('profile', Array)
+#8 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): ProfileController->actionProfile()
+#9 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#13 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user/profile')
+#14 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\phpserver\www\app\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/app/index.php/user/profile
+---
+2012/12/10 15:04:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'courier.profiles_fields' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `profiles_fields`.
+in D:\phpserver\www\app\protected\modules\user\models\ProfileField.php (39)
+in D:\phpserver\www\app\protected\modules\user\views\profile\profile.php (27)
+in D:\phpserver\www\app\protected\modules\user\controllers\ProfileController.php (21)
+2012/12/10 15:04:58 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{profiles_fields}}" for active record class "ProfileField" cannot be found in the database.' in D:\phpserver\www\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(ProfileField))
+#1 D:\phpserver\www\app\protected\modules\user\models\ProfileField.php(39): CActiveRecord::model('ProfileField')
+#2 D:\phpserver\www\app\protected\modules\user\views\profile\profile.php(27): ProfileField::model()
+#3 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#4 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#5 D:\phpserver\www\framework\web\CController.php(870): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#6 D:\phpserver\www\framework\web\CController.php(783): CController->renderPartial('profile', Array, true)
+#7 D:\phpserver\www\app\protected\modules\user\controllers\ProfileController.php(21): CController->render('profile', Array)
+#8 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): ProfileController->actionProfile()
+#9 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#13 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user/profile')
+#14 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\phpserver\www\app\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/app/index.php/user/profile
+---
+2012/12/10 15:09:23 [error] [exception.CException] exception 'CException' with message 'Property "User.create_at" is not defined.' in D:\phpserver\www\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(144): CComponent->__get('create_at')
+#1 D:\phpserver\www\app\protected\modules\user\views\profile\profile.php(46): CActiveRecord->__get('create_at')
+#2 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#3 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#4 D:\phpserver\www\framework\web\CController.php(870): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#5 D:\phpserver\www\framework\web\CController.php(783): CController->renderPartial('profile', Array, true)
+#6 D:\phpserver\www\app\protected\modules\user\controllers\ProfileController.php(21): CController->render('profile', Array)
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): ProfileController->actionProfile()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user/profile')
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/app/index.php/user/profile
+---
+2012/12/10 15:09:45 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (D:\phpserver\www\framework\web\helpers\CHtml.php:85)
+Stack trace:
+#0 D:\phpserver\www\framework\web\CBaseController.php(127): require()
+#1 D:\phpserver\www\framework\web\CBaseController.php(96): ProfileController->renderInternal()
+#2 D:\phpserver\www\framework\web\CController.php(870): ProfileController->renderFile()
+#3 D:\phpserver\www\framework\web\CController.php(783): ProfileController->renderPartial()
+#4 D:\phpserver\www\app\protected\modules\user\controllers\ProfileController.php(21): ProfileController->render()
+#5 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): ProfileController->actionProfile()
+#6 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 D:\phpserver\www\framework\web\CController.php(287): ProfileController->runAction()
+#8 D:\phpserver\www\framework\web\CController.php(266): ProfileController->runActionWithFilters()
+#9 D:\phpserver\www\framework\web\CWebApplication.php(283): ProfileController->run()
+#10 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/user/profile
+in D:\phpserver\www\app\protected\modules\user\views\profile\profile.php (54)
+in D:\phpserver\www\app\protected\modules\user\controllers\ProfileController.php (21)
+in D:\phpserver\www\app\index.php (13)
+2012/12/10 15:10:53 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (D:\phpserver\www\framework\web\helpers\CHtml.php:85)
+Stack trace:
+#0 D:\phpserver\www\framework\web\CBaseController.php(127): require()
+#1 D:\phpserver\www\framework\web\CBaseController.php(96): ProfileController->renderInternal()
+#2 D:\phpserver\www\framework\web\CController.php(870): ProfileController->renderFile()
+#3 D:\phpserver\www\framework\web\CController.php(783): ProfileController->renderPartial()
+#4 D:\phpserver\www\app\protected\modules\user\controllers\ProfileController.php(21): ProfileController->render()
+#5 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): ProfileController->actionProfile()
+#6 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 D:\phpserver\www\framework\web\CController.php(287): ProfileController->runAction()
+#8 D:\phpserver\www\framework\web\CController.php(266): ProfileController->runActionWithFilters()
+#9 D:\phpserver\www\framework\web\CWebApplication.php(283): ProfileController->run()
+#10 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/user/profile
+in D:\phpserver\www\app\protected\modules\user\views\profile\profile.php (55)
+in D:\phpserver\www\app\protected\modules\user\controllers\ProfileController.php (21)
+in D:\phpserver\www\app\index.php (13)
+2012/12/10 15:11:50 [error] [php] Illegal offset type in isset or empty (D:\phpserver\www\app\protected\modules\user\models\User.php:151)
+Stack trace:
+#0 D:\phpserver\www\framework\web\CBaseController.php(96): ProfileController->renderInternal()
+#1 D:\phpserver\www\framework\web\CController.php(870): ProfileController->renderFile()
+#2 D:\phpserver\www\framework\web\CController.php(783): ProfileController->renderPartial()
+#3 D:\phpserver\www\app\protected\modules\user\controllers\ProfileController.php(21): ProfileController->render()
+#4 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): ProfileController->actionProfile()
+#5 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 D:\phpserver\www\framework\web\CController.php(287): ProfileController->runAction()
+#7 D:\phpserver\www\framework\web\CController.php(266): ProfileController->runActionWithFilters()
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): ProfileController->run()
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/user/profile
+in D:\phpserver\www\app\protected\modules\user\models\User.php (151)
+in D:\phpserver\www\app\protected\modules\user\views\profile\profile.php (55)
+in D:\phpserver\www\app\protected\modules\user\controllers\ProfileController.php (21)
+2012/12/10 15:12:01 [error] [php] Illegal offset type in isset or empty (D:\phpserver\www\app\protected\modules\user\models\User.php:151)
+Stack trace:
+#0 D:\phpserver\www\framework\web\CBaseController.php(96): ProfileController->renderInternal()
+#1 D:\phpserver\www\framework\web\CController.php(870): ProfileController->renderFile()
+#2 D:\phpserver\www\framework\web\CController.php(783): ProfileController->renderPartial()
+#3 D:\phpserver\www\app\protected\modules\user\controllers\ProfileController.php(21): ProfileController->render()
+#4 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): ProfileController->actionProfile()
+#5 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 D:\phpserver\www\framework\web\CController.php(287): ProfileController->runAction()
+#7 D:\phpserver\www\framework\web\CController.php(266): ProfileController->runActionWithFilters()
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): ProfileController->run()
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/user/profile
+in D:\phpserver\www\app\protected\modules\user\models\User.php (151)
+in D:\phpserver\www\app\protected\modules\user\views\profile\profile.php (55)
+in D:\phpserver\www\app\protected\modules\user\controllers\ProfileController.php (21)
+2012/12/10 15:29:20 [error] [exception.CException] exception 'CException' with message 'Property "User.create_on" is not defined.' in D:\phpserver\www\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(144): CComponent->__get('create_on')
+#1 D:\phpserver\www\app\protected\modules\user\views\profile\profile.php(46): CActiveRecord->__get('create_on')
+#2 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#3 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#4 D:\phpserver\www\framework\web\CController.php(870): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#5 D:\phpserver\www\framework\web\CController.php(783): CController->renderPartial('profile', Array, true)
+#6 D:\phpserver\www\app\protected\modules\user\controllers\ProfileController.php(21): CController->render('profile', Array)
+#7 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): ProfileController->actionProfile()
+#8 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#12 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user/profile')
+#13 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpserver\www\app\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/app/index.php/user/profile
+---
+2012/12/10 15:29:50 [error] [exception.CException] exception 'CException' with message 'Property "User.id" is not defined.' in D:\phpserver\www\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id')
+#1 D:\phpserver\www\framework\base\CComponent.php(607) : eval()'d code(1): CActiveRecord->__get('id')
+#2 D:\phpserver\www\framework\base\CComponent.php(607): eval()
+#3 D:\phpserver\www\framework\zii\widgets\grid\CDataColumn.php(132): CComponent->evaluateExpression('CHtml::link(CHt...', Array)
+#4 D:\phpserver\www\framework\zii\widgets\grid\CGridColumn.php(145): CDataColumn->renderDataCellContent(0, Object(User))
+#5 D:\phpserver\www\framework\zii\widgets\grid\CGridView.php(546): CGridColumn->renderDataCell(0)
+#6 D:\phpserver\www\framework\zii\widgets\grid\CGridView.php(517): CGridView->renderTableRow(0)
+#7 D:\phpserver\www\framework\zii\widgets\grid\CGridView.php(427): CGridView->renderTableBody()
+#8 D:\phpserver\www\framework\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 D:\phpserver\www\framework\zii\widgets\CBaseListView.php(144): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 D:\phpserver\www\framework\zii\widgets\CBaseListView.php(129): CBaseListView->renderContent()
+#12 D:\phpserver\www\framework\web\CBaseController.php(174): CBaseListView->run()
+#13 D:\phpserver\www\app\protected\modules\user\views\user\index.php(27): CBaseController->widget('zii.widgets.gri...', Array)
+#14 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#15 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#16 D:\phpserver\www\framework\web\CController.php(870): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#17 D:\phpserver\www\framework\web\CController.php(783): CController->renderPartial('/user/index', Array, true)
+#18 D:\phpserver\www\app\protected\modules\user\controllers\DefaultController.php(22): CController->render('/user/index', Array)
+#19 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#20 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#21 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#22 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#24 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user')
+#25 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 D:\phpserver\www\app\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/app/index.php/user
+HTTP_REFERER=http://localhost/app/index.php/user/profile
+---
+2012/12/10 15:36:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\phpserver\www\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\phpserver\www\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(RWebUser), 'You are not aut...')
+#1 D:\phpserver\www\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#8 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user/admin')
+#9 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpserver\www\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/app/index.php/user/admin
+---
+2012/12/10 15:39:14 [error] [exception.CException] exception 'CException' with message 'Property "User.id" is not defined.' in D:\phpserver\www\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id')
+#1 D:\phpserver\www\framework\base\CComponent.php(607) : eval()'d code(1): CActiveRecord->__get('id')
+#2 D:\phpserver\www\framework\base\CComponent.php(607): eval()
+#3 D:\phpserver\www\framework\zii\widgets\grid\CDataColumn.php(132): CComponent->evaluateExpression('CHtml::link(CHt...', Array)
+#4 D:\phpserver\www\framework\zii\widgets\grid\CGridColumn.php(145): CDataColumn->renderDataCellContent(0, Object(User))
+#5 D:\phpserver\www\framework\zii\widgets\grid\CGridView.php(546): CGridColumn->renderDataCell(0)
+#6 D:\phpserver\www\framework\zii\widgets\grid\CGridView.php(517): CGridView->renderTableRow(0)
+#7 D:\phpserver\www\framework\zii\widgets\grid\CGridView.php(427): CGridView->renderTableBody()
+#8 D:\phpserver\www\framework\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 D:\phpserver\www\framework\zii\widgets\CBaseListView.php(144): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 D:\phpserver\www\framework\zii\widgets\CBaseListView.php(129): CBaseListView->renderContent()
+#12 D:\phpserver\www\framework\web\CBaseController.php(174): CBaseListView->run()
+#13 D:\phpserver\www\app\protected\modules\user\views\user\index.php(27): CBaseController->widget('zii.widgets.gri...', Array)
+#14 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#15 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#16 D:\phpserver\www\framework\web\CController.php(870): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#17 D:\phpserver\www\framework\web\CController.php(783): CController->renderPartial('/user/index', Array, true)
+#18 D:\phpserver\www\app\protected\modules\user\controllers\DefaultController.php(22): CController->render('/user/index', Array)
+#19 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#20 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#21 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#22 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#24 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user')
+#25 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 D:\phpserver\www\app\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/app/index.php/user
+HTTP_REFERER=http://localhost/app/index.php/user/profile
+---
+2012/12/10 15:39:58 [error] [exception.CException] exception 'CException' with message 'Property "User.create_at" is not defined.' in D:\phpserver\www\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(144): CComponent->__get('create_at')
+#1 D:\phpserver\www\framework\web\helpers\CHtml.php(1809): CActiveRecord->__get('create_at')
+#2 D:\phpserver\www\framework\zii\widgets\grid\CDataColumn.php(134): CHtml::value(Object(User), 'create_at')
+#3 D:\phpserver\www\framework\zii\widgets\grid\CGridColumn.php(145): CDataColumn->renderDataCellContent(0, Object(User))
+#4 D:\phpserver\www\framework\zii\widgets\grid\CGridView.php(546): CGridColumn->renderDataCell(0)
+#5 D:\phpserver\www\framework\zii\widgets\grid\CGridView.php(517): CGridView->renderTableRow(0)
+#6 D:\phpserver\www\framework\zii\widgets\grid\CGridView.php(427): CGridView->renderTableBody()
+#7 D:\phpserver\www\framework\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#8 [internal function]: CBaseListView->renderSection(Array)
+#9 D:\phpserver\www\framework\zii\widgets\CBaseListView.php(144): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#10 D:\phpserver\www\framework\zii\widgets\CBaseListView.php(129): CBaseListView->renderContent()
+#11 D:\phpserver\www\framework\web\CBaseController.php(174): CBaseListView->run()
+#12 D:\phpserver\www\app\protected\modules\user\views\user\index.php(27): CBaseController->widget('zii.widgets.gri...', Array)
+#13 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#14 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#15 D:\phpserver\www\framework\web\CController.php(870): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#16 D:\phpserver\www\framework\web\CController.php(783): CController->renderPartial('/user/index', Array, true)
+#17 D:\phpserver\www\app\protected\modules\user\controllers\DefaultController.php(22): CController->render('/user/index', Array)
+#18 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#19 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#21 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#23 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user')
+#24 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 D:\phpserver\www\app\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/app/index.php/user
+HTTP_REFERER=http://localhost/app/index.php/user/profile
+---
+2012/12/10 15:40:14 [error] [exception.CException] exception 'CException' with message 'Property "User.create_at" is not defined.' in D:\phpserver\www\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(144): CComponent->__get('create_at')
+#1 D:\phpserver\www\framework\web\helpers\CHtml.php(1809): CActiveRecord->__get('create_at')
+#2 D:\phpserver\www\framework\zii\widgets\CDetailView.php(212): CHtml::value(Object(User), 'create_at')
+#3 D:\phpserver\www\framework\web\CBaseController.php(174): CDetailView->run()
+#4 D:\phpserver\www\app\protected\modules\user\views\user\view.php(41): CBaseController->widget('zii.widgets.CDe...', Array)
+#5 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#6 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#7 D:\phpserver\www\framework\web\CController.php(870): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#8 D:\phpserver\www\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#9 D:\phpserver\www\app\protected\modules\user\controllers\UserController.php(45): CController->render('view', Array)
+#10 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): UserController->actionView()
+#11 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#15 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#16 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#18 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#20 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user/user/view/...')
+#21 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 D:\phpserver\www\app\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/app/index.php/user/user/view/id/1
+HTTP_REFERER=http://localhost/app/index.php/user
+---
+2012/12/10 15:40:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in D:\phpserver\www\framework\web\CController.php:484
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(271): CController->missingAction('admin')
+#1 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('admin')
+#2 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user/user/admin')
+#3 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\phpserver\www\app\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/index.php/user/user/admin
+---
+2012/12/10 15:42:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\phpserver\www\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\phpserver\www\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(RWebUser), 'You are not aut...')
+#1 D:\phpserver\www\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#8 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user/admin')
+#9 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpserver\www\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/app/index.php/user/admin
+---
+2012/12/10 15:43:18 [error] [exception.CException] exception 'CException' with message 'Property "User.id" is not defined.' in D:\phpserver\www\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id')
+#1 D:\phpserver\www\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('id')
+#2 D:\phpserver\www\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(User), 'id')
+#3 D:\phpserver\www\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(User), 'id', Array)
+#4 D:\phpserver\www\framework\web\widgets\CActiveForm.php(658): CHtml::activeTextField(Object(User), 'id', Array)
+#5 D:\phpserver\www\app\protected\modules\user\views\admin\_search.php(10): CActiveForm->textField(Object(User), 'id')
+#6 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#7 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#8 D:\phpserver\www\framework\web\CController.php(870): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#9 D:\phpserver\www\app\protected\modules\user\views\admin\index.php(36): CController->renderPartial('_search', Array)
+#10 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#11 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#12 D:\phpserver\www\framework\web\CController.php(870): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#13 D:\phpserver\www\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#14 D:\phpserver\www\app\protected\modules\user\controllers\AdminController.php(48): CController->render('index', Array)
+#15 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): AdminController->actionAdmin()
+#16 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#23 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#25 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user/admin')
+#26 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 D:\phpserver\www\app\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/app/index.php/user/admin
+---
+2012/12/10 15:43:49 [error] [exception.CException] exception 'CException' with message 'Property "User.id" is not defined.' in D:\phpserver\www\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id')
+#1 D:\phpserver\www\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('id')
+#2 D:\phpserver\www\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(User), 'id')
+#3 D:\phpserver\www\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(User), 'id', Array)
+#4 D:\phpserver\www\framework\web\widgets\CActiveForm.php(658): CHtml::activeTextField(Object(User), 'id', Array)
+#5 D:\phpserver\www\app\protected\modules\user\views\admin\_search.php(10): CActiveForm->textField(Object(User), 'id')
+#6 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#7 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#8 D:\phpserver\www\framework\web\CController.php(870): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#9 D:\phpserver\www\app\protected\modules\user\views\admin\index.php(36): CController->renderPartial('_search', Array)
+#10 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#11 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#12 D:\phpserver\www\framework\web\CController.php(870): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#13 D:\phpserver\www\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#14 D:\phpserver\www\app\protected\modules\user\controllers\AdminController.php(48): CController->render('index', Array)
+#15 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): AdminController->actionAdmin()
+#16 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#23 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#25 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user/admin')
+#26 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 D:\phpserver\www\app\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/app/index.php/user/admin
+---
+2012/12/10 15:44:24 [error] [exception.CException] exception 'CException' with message 'Property "User.id" is not defined.' in D:\phpserver\www\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id')
+#1 D:\phpserver\www\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('id')
+#2 D:\phpserver\www\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(User), 'id')
+#3 D:\phpserver\www\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(User), 'id', Array)
+#4 D:\phpserver\www\framework\web\widgets\CActiveForm.php(658): CHtml::activeTextField(Object(User), 'id', Array)
+#5 D:\phpserver\www\app\protected\modules\user\views\admin\_search.php(10): CActiveForm->textField(Object(User), 'id')
+#6 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#7 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#8 D:\phpserver\www\framework\web\CController.php(870): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#9 D:\phpserver\www\app\protected\modules\user\views\admin\index.php(36): CController->renderPartial('_search', Array)
+#10 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#11 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#12 D:\phpserver\www\framework\web\CController.php(870): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#13 D:\phpserver\www\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#14 D:\phpserver\www\app\protected\modules\user\controllers\AdminController.php(48): CController->render('index', Array)
+#15 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): AdminController->actionAdmin()
+#16 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#23 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#25 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user/admin')
+#26 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 D:\phpserver\www\app\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/app/index.php/user/admin
+---
+2012/12/10 15:45:30 [error] [exception.CException] exception 'CException' with message 'Property "User.id" is not defined.' in D:\phpserver\www\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id')
+#1 D:\phpserver\www\app\protected\modules\user\models\User.php(167): CActiveRecord->__get('id')
+#2 D:\phpserver\www\app\protected\modules\user\views\admin\index.php(41): User->search()
+#3 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#4 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#5 D:\phpserver\www\framework\web\CController.php(870): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#6 D:\phpserver\www\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#7 D:\phpserver\www\app\protected\modules\user\controllers\AdminController.php(48): CController->render('index', Array)
+#8 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): AdminController->actionAdmin()
+#9 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#16 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#18 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user/admin')
+#19 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 D:\phpserver\www\app\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/app/index.php/user/admin
+---
+2012/12/10 15:54:00 [error] [exception.CException] exception 'CException' with message 'Property "User.id" is not defined.' in D:\phpserver\www\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id')
+#1 D:\phpserver\www\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('id')
+#2 D:\phpserver\www\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(User), 'id')
+#3 D:\phpserver\www\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(User), 'id', Array)
+#4 D:\phpserver\www\framework\zii\widgets\grid\CDataColumn.php(98): CHtml::activeTextField(Object(User), 'id', Array)
+#5 D:\phpserver\www\framework\zii\widgets\grid\CGridColumn.php(110): CDataColumn->renderFilterCellContent()
+#6 D:\phpserver\www\framework\zii\widgets\grid\CGridView.php(477): CGridColumn->renderFilterCell()
+#7 D:\phpserver\www\framework\zii\widgets\grid\CGridView.php(455): CGridView->renderFilter()
+#8 D:\phpserver\www\framework\zii\widgets\grid\CGridView.php(425): CGridView->renderTableHeader()
+#9 D:\phpserver\www\framework\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 D:\phpserver\www\framework\zii\widgets\CBaseListView.php(144): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 D:\phpserver\www\framework\zii\widgets\CBaseListView.php(129): CBaseListView->renderContent()
+#13 D:\phpserver\www\framework\web\CBaseController.php(174): CBaseListView->run()
+#14 D:\phpserver\www\app\protected\modules\user\views\admin\index.php(75): CBaseController->widget('zii.widgets.gri...', Array)
+#15 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#16 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#17 D:\phpserver\www\framework\web\CController.php(870): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#18 D:\phpserver\www\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#19 D:\phpserver\www\app\protected\modules\user\controllers\AdminController.php(48): CController->render('index', Array)
+#20 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): AdminController->actionAdmin()
+#21 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#22 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#23 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#24 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#25 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#26 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#27 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#28 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#30 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user/admin')
+#31 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#32 D:\phpserver\www\app\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/app/index.php/user/admin
+---
+2012/12/10 15:56:02 [error] [exception.CException] exception 'CException' with message 'Property "User.id" is not defined.' in D:\phpserver\www\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpserver\www\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id')
+#1 D:\phpserver\www\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('id')
+#2 D:\phpserver\www\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(User), 'id')
+#3 D:\phpserver\www\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(User), 'id', Array)
+#4 D:\phpserver\www\framework\zii\widgets\grid\CDataColumn.php(98): CHtml::activeTextField(Object(User), 'id', Array)
+#5 D:\phpserver\www\framework\zii\widgets\grid\CGridColumn.php(110): CDataColumn->renderFilterCellContent()
+#6 D:\phpserver\www\framework\zii\widgets\grid\CGridView.php(477): CGridColumn->renderFilterCell()
+#7 D:\phpserver\www\framework\zii\widgets\grid\CGridView.php(455): CGridView->renderFilter()
+#8 D:\phpserver\www\framework\zii\widgets\grid\CGridView.php(425): CGridView->renderTableHeader()
+#9 D:\phpserver\www\framework\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 D:\phpserver\www\framework\zii\widgets\CBaseListView.php(144): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 D:\phpserver\www\framework\zii\widgets\CBaseListView.php(129): CBaseListView->renderContent()
+#13 D:\phpserver\www\framework\web\CBaseController.php(174): CBaseListView->run()
+#14 D:\phpserver\www\app\protected\modules\user\views\admin\index.php(75): CBaseController->widget('zii.widgets.gri...', Array)
+#15 D:\phpserver\www\framework\web\CBaseController.php(127): require('D:\phpserver\ww...')
+#16 D:\phpserver\www\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\phpserver\ww...', Array, true)
+#17 D:\phpserver\www\framework\web\CController.php(870): CBaseController->renderFile('D:\phpserver\ww...', Array, true)
+#18 D:\phpserver\www\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#19 D:\phpserver\www\app\protected\modules\user\controllers\AdminController.php(48): CController->render('index', Array)
+#20 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): AdminController->actionAdmin()
+#21 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#22 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#23 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#24 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#25 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#26 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#27 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#28 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#30 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('user/admin')
+#31 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#32 D:\phpserver\www\app\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/app/index.php/user/admin
+---

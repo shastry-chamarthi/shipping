@@ -287,10 +287,11 @@ class RAuthorizer extends CApplicationComponent
 		$userIdList = array();
 		foreach( $assignments as $userId=>$assignment )
 			$userIdList[] = $userId;
-
+	 
 		$criteria = new CDbCriteria();
+		
 		$criteria->addInCondition(Rights::module()->userIdColumn, $userIdList);
-
+	 
 		$userClass = Rights::module()->userClass;
 		$users = CActiveRecord::model($userClass)->findAll($criteria);
 		$users = $this->attachUserBehavior($users);
