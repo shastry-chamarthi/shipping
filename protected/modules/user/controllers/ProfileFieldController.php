@@ -378,7 +378,7 @@ class ProfileFieldController extends Controller
 		{
 			$model->attributes=$_POST['ProfileField'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->user_id));
+				$this->redirect(array('view','id'=>$model->user_ref_id));
 		}
 		$this->registerScript();
 

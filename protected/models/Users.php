@@ -1,9 +1,8 @@
 <?php
 
-Yii::import('application.models._base.BaseState');
+Yii::import('application.models._base.BaseUsers');
 
-class State extends BaseState{
-	public $val;
+class Users extends BaseUsers{
     public static function model($className = __CLASS__) {
         return parent::model($className);
     }

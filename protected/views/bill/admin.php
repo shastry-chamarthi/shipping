@@ -103,13 +103,13 @@ return false;
         'created_on',
         array(
                 			'name'   => 'modified_by',
-                      'value'  => 'isset($data->modifiedBy->user_name)?$data->modifiedBy->user_name:"N/A"',
-                      'filter' => CHtml::listData(::model()->findAll(),'user_id','user_name'),
+                      'value'  => 'isset($data->modifiedBy->username)?$data->modifiedBy->username:"N/A"',
+                      'filter' => CHtml::listData(::model()->findAll(),'user_id','username'),
                 ),
         array(
                 			'name'   => 'created_by',
-                      'value'  => 'isset($data->createdBy->user_name)?$data->createdBy->user_name:"N/A"',
-                      'filter' => CHtml::listData(::model()->findAll(),'user_id','user_name'),
+                      'value'  => 'isset($data->createdBy->username)?$data->createdBy->username:"N/A"',
+                      'filter' => CHtml::listData(::model()->findAll(),'user_id','username'),
                 ),
 array(
 			'class' => 'CButtonColumn',

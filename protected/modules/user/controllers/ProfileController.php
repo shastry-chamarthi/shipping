@@ -41,7 +41,12 @@ class ProfileController extends Controller
 		if(isset($_POST['User']))
 		{
 			$model->attributes=$_POST['User'];
-			$profile->attributes=$_POST['Profile'];
+			 
+			foreach($profile->attributes as $key=>$atribute) {
+				if($key != "user_ref_id") {
+				$profile->$key = $_POST['Profile'][$key];
+				}
+			}
 			
 			if($model->validate()&&$profile->validate()) {
 				$model->save();

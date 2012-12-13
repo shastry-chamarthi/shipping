@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Express Services',
+	'name'=>'WCF',
 	'theme'=>'classic',
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -23,7 +23,9 @@ return array(
 		'application.modules.user.components.*', 
 		'application.modules.rights.components.*',
 		'application.extensions.awegen.components.*',
-		'application.extensions.awegen.*'
+		'application.extensions.awegen.*',
+		'application.extensions.jselectsearch.*',
+		'application.extensions.autoloadWidget.*',
 	),
 
 	'modules'=>array(
@@ -96,7 +98,7 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
-			'class'=>'RWebUser',
+			'class'=>'WebUser',
 			'loginUrl' => array('/user/login'),
 		),
 		// uncomment the following to enable URLs in path-format
@@ -104,13 +106,8 @@ return array(
 			'class'=>'RDbAuthManager', 
 		),
 		'urlManager'=>array(
-			'urlFormat'=>'path',
-			 
-			'rules'=>array(
-				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-			),
+			'urlFormat'=>'path',			
+			'rules'=> include 'rules.php',
 		),
 		/* 
 		'db'=>array(
@@ -121,7 +118,7 @@ return array(
 		 
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=courier',
-			'emulatePrepare' => true,
+			'emulatePrepare' => false,
 			'username' => 'root',
 			'password' => '',
 			'charset' => 'utf8',
@@ -155,5 +152,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
+		'auload_widget_list'=>'JSelectSearch',
 	),
 );

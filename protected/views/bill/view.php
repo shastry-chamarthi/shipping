@@ -20,7 +20,7 @@ array('label'=>Yii::t('app', 'Manage') , 'url'=>array('admin')),
 'attributes' => array(
 array(
                         'name'=>'id',
-                        'visible'=>Yii::app()->user->id=='admin'
+                        'visible'=>Yii::app()->getModule('user')->isAdmin()
                     ),'date','airway_bill_no','company_id','to_addr_line1','to_addr_line2',		array(
 			'name'=>'to_city_id',
 			'value'=>($model->toCity !== null)?CHtml::link($model->toCity->city_name, array('/city/view','city_id'=>$model->toCity->city_id)).' ':'n/a',
@@ -63,12 +63,12 @@ array(
 		),
 'modified_on','created_on',		array(
 			'name'=>'modified_by',
-			'value'=>($model->modifiedBy !== null)?CHtml::link($model->modifiedBy->user_name, array('/users/view','user_id'=>$model->modifiedBy->user_id)).' ':'n/a',
+			'value'=>($model->modifiedBy !== null)?CHtml::link($model->modifiedBy->username, array('/users/view','user_id'=>$model->modifiedBy->user_id)).' ':'n/a',
 			'type'=>'html',
 		),
 		array(
 			'name'=>'created_by',
-			'value'=>($model->createdBy !== null)?CHtml::link($model->createdBy->user_name, array('/users/view','user_id'=>$model->createdBy->user_id)).' ':'n/a',
+			'value'=>($model->createdBy !== null)?CHtml::link($model->createdBy->username, array('/users/view','user_id'=>$model->createdBy->user_id)).' ':'n/a',
 			'type'=>'html',
 		),
 )));?>

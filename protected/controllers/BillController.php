@@ -1,5 +1,5 @@
 <?php
-class AwbController extends Controller {
+class BillController extends Controller {
 
 public function filters() {
 	return array(

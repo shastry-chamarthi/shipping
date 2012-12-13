@@ -82,8 +82,12 @@ class AdminController extends Controller
 		{
 			$model->attributes=$_POST['User'];
 			$model->activkey=Yii::app()->controller->module->encrypting(microtime().$model->password);
-			$profile->attributes=$_POST['Profile'];
-			$profile->user_id=0;
+			foreach($profile->attributes as $key=>$atribute) {
+				if($key != "user_ref_id") {
+				$profile->$key = $_POST['Profile'][$key];
+				}
+			}
+			$profile->user_ref_id=0;
 			if($model->validate()&&$profile->validate()) {
 				$model->password=Yii::app()->controller->module->encrypting($model->password);
 				if($model->save()) {
@@ -100,6 +104,7 @@ class AdminController extends Controller
 		));
 	}
 
+	 
 	/**
 	 * Updates a particular model.
 	 * If update is successful, the browser will be redirected to the 'view' page.
@@ -109,11 +114,20 @@ class AdminController extends Controller
 		$model=$this->loadModel();
 		$profile=$model->profile;
 		$this->performAjaxValidation(array($model,$profile));
+		//echo 'her2222er';
 		if(isset($_POST['User']))
 		{
-			$model->attributes=$_POST['User'];
-			$profile->attributes=$_POST['Profile'];
 			
+			$model->attributes=$_POST['User'];
+			//CVarDumper::dump($_POST['Profile']);
+			//$profile->attributes=$_POST['Profile'];
+			//print_r($profile->attributes);
+			//array ( 'firstname' => 'admin' 'role' => '2' 'lastname' => 'super' );
+			foreach($profile->attributes as $key=>$atribute) {
+				if($key != "user_ref_id") {
+				$profile->$key = $_POST['Profile'][$key];
+				}
+			}
 			if($model->validate()&&$profile->validate()) {
 				$old_password = User::model()->notsafe()->findByPk($model->user_id);
 				if ($old_password->password!=$model->password) {
@@ -123,7 +137,11 @@ class AdminController extends Controller
 				$model->save();
 				$profile->save();
 				$this->redirect(array('view','id'=>$model->user_id));
-			} else $profile->validate();
+			} else { 
+			 
+			$profile->validate();  
+			
+			}
 		}
 
 		$this->render('update',array(

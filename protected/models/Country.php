@@ -1,9 +1,8 @@
 <?php
 
-Yii::import('application.models._base.BaseState');
+Yii::import('application.models._base.BaseCountry');
 
-class State extends BaseState{
-	public $val;
+class Country extends BaseCountry{
     public static function model($className = __CLASS__) {
         return parent::model($className);
     }

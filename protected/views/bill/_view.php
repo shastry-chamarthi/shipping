@@ -562,7 +562,7 @@
     }
     ?>
     <?php
-    if (!empty($data->modifiedBy->user_name)) {
+    if (!empty($data->modifiedBy->username)) {
         ?>
     <div class="field">
             <div class="field_name">
@@ -571,7 +571,7 @@
 <div class="field_value">
 
                 <?php
-                echo CHtml::encode($data->modifiedBy->user_name);
+                echo CHtml::encode($data->modifiedBy->username);
                 ?>
 
             </div>
@@ -580,7 +580,7 @@
     }
     ?>
     <?php
-    if (!empty($data->createdBy->user_name)) {
+    if (!empty($data->createdBy->username)) {
         ?>
     <div class="field">
             <div class="field_name">
@@ -589,7 +589,7 @@
 <div class="field_value">
 
                 <?php
-                echo CHtml::encode($data->createdBy->user_name);
+                echo CHtml::encode($data->createdBy->username);
                 ?>
 
             </div>

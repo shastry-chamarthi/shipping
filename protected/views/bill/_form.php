@@ -264,13 +264,13 @@
         
         <div class="row">
             <?php echo $form->labelEx($model,'modified_by'); ?>
-            <?php echo $form->dropDownList($model, 'modifiedBy', CHtml::listData(Users::model()->findAll(),'user_id', 'user_name')); ?>
+            <?php echo $form->dropDownList($model, 'modifiedBy', CHtml::listData(Users::model()->findAll(),'user_id', 'username')); ?>
             <?php echo $form->error($model,'modified_by'); ?>
         </div>
         
         <div class="row">
             <?php echo $form->labelEx($model,'created_by'); ?>
-            <?php echo $form->dropDownList($model, 'createdBy', CHtml::listData(Users::model()->findAll(),'user_id', 'user_name')); ?>
+            <?php echo $form->dropDownList($model, 'createdBy', CHtml::listData(Users::model()->findAll(),'user_id', 'username')); ?>
             <?php echo $form->error($model,'created_by'); ?>
         </div>
             <?php

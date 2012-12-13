@@ -63,7 +63,7 @@ class User extends CActiveRecord
 			array('username, email, superuser, status', 'required'),
 			array('superuser, status', 'numerical', 'integerOnly'=>true),
 			array('id, username, password, email, activkey, created_on, lastvisit_at, superuser, status', 'safe', 'on'=>'search'),
-		):((Yii::app()->user->id==$this->id)?array(
+		):((Yii::app()->user->id==$this->user_id)?array(
 			array('username, email', 'required'),
 			array('username', 'length', 'max'=>20, 'min' => 3,'message' => UserModule::t("Incorrect username (length between 3 and 20 characters).")),
 			array('email', 'email'),
