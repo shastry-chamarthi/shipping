@@ -25,7 +25,7 @@ array('label'=>Yii::t('app', 'Manage') , 'url'=>array('admin')),
 			<?php if (is_array($model->states)) foreach($model->states as $foreignobj) { 
 
 					echo '<li>';
-					echo CHtml::link($foreignobj->state_name, array('/state/view','state_id'=>$foreignobj->state_id));
+					echo CHtml::link($foreignobj->state_name, array('/state/view','id'=>$foreignobj->state_id));
 							
 					}
 						?></ul>

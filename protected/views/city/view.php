@@ -20,7 +20,7 @@ array('label'=>Yii::t('app', 'Manage') , 'url'=>array('admin')),
 'attributes' => array(
 'city_id','city_name',		array(
 			'name'=>'state_id',
-			'value'=>($model->state !== null)?CHtml::link($model->state->state_name, array('/state/view','state_id'=>$model->state->state_id)).' ':'n/a',
+			'value'=>($model->state !== null)?CHtml::link($model->state->state_name, array('/state/view','id'=>$model->state->state_id)).' ':'n/a',
 			'type'=>'html',
 		),
 )));?>
@@ -30,7 +30,7 @@ array('label'=>Yii::t('app', 'Manage') , 'url'=>array('admin')),
 			<?php if (is_array($model->accounts)) foreach($model->accounts as $foreignobj) { 
 
 					echo '<li>';
-					echo CHtml::link($foreignobj->account_name, array('/account/view','account_id'=>$foreignobj->account_id));
+					echo CHtml::link($foreignobj->account_name, array('/account/view','id'=>$foreignobj->account_id));
 							
 					}
 						?></ul>

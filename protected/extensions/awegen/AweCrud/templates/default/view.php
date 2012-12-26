@@ -33,7 +33,7 @@ foreach ($this->tableSchema->columns as $column) {
                 $identificationColumn = AweCrudCode::getIdentificationColumnFromTableSchema($relatedModel->tableSchema);
                 $controller = $this->resolveController($relation);
                 $value = "(\$model->{$key} !== null)?";
-                $value .= "CHtml::link(\$model->{$key}->$identificationColumn, array('{$controller}/view','{$relatedModel->tableSchema->primaryKey}'=>\$model->{$key}->{$relatedModel->tableSchema->primaryKey})).' '";
+                $value .= "CHtml::link(\$model->{$key}->$identificationColumn, array('{$controller}/view','id'=>\$model->{$key}->{$relatedModel->tableSchema->primaryKey})).' '";
                 //$value .= ".CHtml::link(Yii::t('app','Update'), array('{$controller}/update','{$relatedModel->tableSchema->primaryKey}'=>\$model->{$key}->{$relatedModel->tableSchema->primaryKey}), array('class'=>'edit'))";
                 $value .= ":'n/a'";
 
@@ -70,7 +70,7 @@ foreach (CActiveRecord::model(Yii::import($this->model))->relations() as $key =>
         echo "
 			<?php if (is_array(\$model->{$key})) foreach(\$model->{$key} as \$foreignobj) { \n
 					echo '<li>';
-					echo CHtml::link(\$foreignobj->{$identificationColumn}, array('{$controller}/view','{$pk}'=>\$foreignobj->{$pk}));\n							
+					echo CHtml::link(\$foreignobj->{$identificationColumn}, array('{$controller}/view','id'=>\$foreignobj->{$pk}));\n							
 					}
 						?>";
         echo CHtml::closeTag('ul');

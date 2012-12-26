@@ -24,7 +24,6 @@
             <?php echo $form->dropDownList($model, 'country', CHtml::listData(Country::model()->findAll(),'country_id', 'country_name'), array('prompt' => 'None')); ?>
             <?php echo $form->error($model,'country_id'); ?>
         </div>
-		 
             <?php
         echo CHtml::submitButton(Yii::t('app', 'Save'));
 echo CHtml::Button(Yii::t('app', 'Cancel'), array(

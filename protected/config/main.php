@@ -106,7 +106,8 @@ return array(
 			'class'=>'RDbAuthManager', 
 		),
 		'urlManager'=>array(
-			'urlFormat'=>'path',			
+			'urlFormat'=>'path',
+			'class' => 'application.components.AweUrlManager',
 			'rules'=> include 'rules.php',
 		),
 		/* 

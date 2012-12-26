@@ -46,12 +46,7 @@
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?>
 	</div><!-- footer -->
- <select>
- 	<option>1</option>
- 	<option>2</option>
- 	<option>3</option>
- 	<option>4</option>
- </select>
+  
 </div><!-- page -->
 <?php 
 	$this->widget('AutoloadWidget');

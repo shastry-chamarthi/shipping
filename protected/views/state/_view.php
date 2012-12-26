@@ -1,7 +1,7 @@
 <div class="view">
 
     <h2><?php echo CHtml::encode($data->getAttributeLabel('state_name')); ?>:</h2>
-<h2><?php echo CHtml::link(CHtml::encode($data->state_name), array('view', 'state_id' => $data->state_id)); ?></h2>
+<h2><?php echo CHtml::link(CHtml::encode($data->state_name), array('view', 'id' => $data->state_id)); ?></h2>
 
     <?php
     if (!empty($data->country->country_name)) {

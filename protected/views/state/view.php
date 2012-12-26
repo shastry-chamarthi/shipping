@@ -20,7 +20,7 @@ array('label'=>Yii::t('app', 'Manage') , 'url'=>array('admin')),
 'attributes' => array(
 'state_id','state_name',		array(
 			'name'=>'country_id',
-			'value'=>($model->country !== null)?CHtml::link($model->country->country_name, array('/country/view','country_id'=>$model->country->country_id)).' ':'n/a',
+			'value'=>($model->country !== null)?CHtml::link($model->country->country_name, array('/country/view','id'=>$model->country->country_id)).' ':'n/a',
 			'type'=>'html',
 		),
 )));?>
@@ -30,7 +30,7 @@ array('label'=>Yii::t('app', 'Manage') , 'url'=>array('admin')),
 			<?php if (is_array($model->accounts)) foreach($model->accounts as $foreignobj) { 
 
 					echo '<li>';
-					echo CHtml::link($foreignobj->account_name, array('/account/view','account_id'=>$foreignobj->account_id));
+					echo CHtml::link($foreignobj->account_name, array('/account/view','id'=>$foreignobj->account_id));
 							
 					}
 						?></ul>
@@ -63,7 +63,7 @@ array('label'=>Yii::t('app', 'Manage') , 'url'=>array('admin')),
 			<?php if (is_array($model->cities)) foreach($model->cities as $foreignobj) { 
 
 					echo '<li>';
-					echo CHtml::link($foreignobj->city_name, array('/city/view','city_id'=>$foreignobj->city_id));
+					echo CHtml::link($foreignobj->city_name, array('/city/view','id'=>$foreignobj->city_id));
 							
 					}
 						?></ul>

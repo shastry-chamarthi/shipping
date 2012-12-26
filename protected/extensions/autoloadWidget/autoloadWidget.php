@@ -14,7 +14,7 @@ class AutoloadWidget extends CWidget
 	
 	public function init(){
 		$this->extensionsList = explode(",",Yii::app()->params['auload_widget_list']);
-		echo "Auto load started";
+		//echo "Auto load started";
 		foreach($this->extensionsList as $extension)
 		{
 			$this->widget($extension);			

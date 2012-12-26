@@ -5530,3 +5530,569 @@ REQUEST_URI=/app/
 in D:\phpserver\www\app\protected\views\layouts\main.php (57)
 in D:\phpserver\www\app\protected\views\layouts\column1.php (6)
 in D:\phpserver\www\app\protected\controllers\SiteController.php (32)
+2012/12/26 06:09:34 [warning] [application] Failed to set unsafe attribute "country" of "State".
+in D:\phpserver\www\app\protected\controllers\StateController.php (46)
+in D:\phpserver\www\app\index.php (13)
+2012/12/26 06:10:01 [warning] [application] Failed to set unsafe attribute "state" of "City".
+in D:\phpserver\www\app\protected\controllers\CityController.php (46)
+in D:\phpserver\www\app\index.php (13)
+2012/12/26 06:10:07 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('state/view')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/state/view?state_id=1
+HTTP_REFERER=http://localhost/app/index.php/city/1
+---
+2012/12/26 06:23:12 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('state/view')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/state/view?state_id=1
+HTTP_REFERER=http://localhost/app/index.php/city/1
+---
+2012/12/26 06:23:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('state/view')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/state/view/
+---
+2012/12/26 06:23:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('state/view')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/state/view
+---
+2012/12/26 06:23:48 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('state/view')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/state/view?state_id=1
+HTTP_REFERER=http://localhost/app/index.php/state/
+---
+2012/12/26 06:26:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('country/view')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/country/view?country_id=104
+HTTP_REFERER=http://localhost/app/index.php/state/view/1
+---
+2012/12/26 06:47:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('country/view')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/country/view?country_id=104
+HTTP_REFERER=http://localhost/app/index.php/state/view/1
+---
+2012/12/26 06:47:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('country/view')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/country/view?country_id=104
+HTTP_REFERER=http://localhost/app/index.php/state/view/1
+---
+2012/12/26 06:48:43 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('country/view')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/country/view?country_id=104
+HTTP_REFERER=http://localhost/app/index.php/state/view/1
+---
+2012/12/26 06:56:12 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('country/view')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/country/view?country_id=1
+HTTP_REFERER=http://localhost/app/index.php/country/index
+---
+2012/12/26 06:56:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\phpserver\www\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\phpserver\www\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 D:\phpserver\www\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('delete')
+#8 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('country/delete')
+#9 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpserver\www\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/app/index.php/country/delete/1
+---
+2012/12/26 06:56:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('country/view')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/country/view?country_id=1
+HTTP_REFERER=http://localhost/app/index.php/country/update/1
+---
+2012/12/26 07:59:21 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('country/view')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/country/view?country_id=1
+HTTP_REFERER=http://localhost/app/index.php/country/update/1
+---
+2012/12/26 07:59:57 [error] [exception.CException] exception 'CException' with message 'Property "AweCrudCode.primaryKey" is not defined.' in D:\phpserver\www\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpserver\www\app\protected\extensions\awegen\components\Awecms.php(7): CComponent->__get('primaryKey')
+#1 D:\phpserver\www\app\protected\extensions\awegen\AweCrud\templates\default\controller.php(53): Awecms::getPrimaryKey(Object(AweCrudCode))
+#2 D:\phpserver\www\framework\gii\CCodeModel.php(320): require('D:\phpserver\ww...')
+#3 D:\phpserver\www\framework\gii\generators\crud\CrudCode.php(87): CCodeModel->render('D:\phpserver\ww...')
+#4 D:\phpserver\www\framework\gii\CCodeGenerator.php(163): CrudCode->prepare()
+#5 D:\phpserver\www\framework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\phpserver\www\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('')
+#11 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('gii/AweCrud')
+#12 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\phpserver\www\app\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/app/index.php/gii/AweCrud
+HTTP_REFERER=http://localhost/app/index.php/gii/AweCrud
+---
+2012/12/26 08:10:12 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('city/view')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/city/view?city_id=1
+HTTP_REFERER=http://localhost/app/index.php/city/
+---
+2012/12/26 08:36:06 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('city/view')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/city/view?city_id=1
+HTTP_REFERER=http://localhost/app/index.php/city
+---
+2012/12/26 08:41:28 [error] [php] include(Settings.php): failed to open stream: No such file or directory (D:\phpserver\www\framework\YiiBase.php:423)
+Stack trace:
+#0 D:\phpserver\www\app\protected\components\AweUrlManager.php(64): spl_autoload_call()
+#1 D:\phpserver\www\framework\web\CWebApplication.php(141): AweUrlManager->parseUrl()
+#2 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#3 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/city
+in D:\phpserver\www\app\protected\components\AweUrlManager.php (64)
+in D:\phpserver\www\app\index.php (13)
+2012/12/26 08:43:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('city/view/city_...')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/city/view/city_id/1
+HTTP_REFERER=http://localhost/app/index.php/city
+---
+2012/12/26 08:43:55 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('city/view/city_...')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/city/view/city_id/1
+HTTP_REFERER=http://localhost/app/index.php/city
+---
+2012/12/26 12:22:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('city/view/city_...')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/city/view/city_id/1
+HTTP_REFERER=http://localhost/app/index.php/city
+---
+2012/12/26 12:22:04 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('city/view/city_...')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/city/view/city_id/1
+HTTP_REFERER=http://localhost/app/index.php/city
+---
+2012/12/26 12:35:53 [error] [php] Undefined variable: data (D:\phpserver\www\app\protected\extensions\awegen\AweCrud\templates\default\_view.php:9)
+Stack trace:
+#0 D:\phpserver\www\framework\gii\CCodeGenerator.php(163): AweCrudCode->prepare()
+#1 D:\phpserver\www\framework\gii\CCodeGenerator.php(64): AweCrudGenerator->prepare()
+#2 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): AweCrudGenerator->actionIndex()
+#3 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\phpserver\www\framework\web\CController.php(287): AweCrudGenerator->runAction()
+#5 D:\phpserver\www\framework\web\CController.php(266): AweCrudGenerator->runActionWithFilters()
+#6 D:\phpserver\www\framework\web\CWebApplication.php(283): AweCrudGenerator->run()
+#7 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#8 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/gii/AweCrud
+in D:\phpserver\www\app\protected\extensions\awegen\AweCrud\templates\default\_view.php (9)
+in D:\phpserver\www\app\index.php (13)
+2012/12/26 12:36:50 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('city/view/0/1')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/city/view/0/1
+HTTP_REFERER=http://localhost/app/index.php/city/
+---
+2012/12/26 12:38:29 [error] [php] Object of class CMysqlTableSchema could not be converted to string (D:\phpserver\www\app\protected\extensions\awegen\AweCrud\templates\default\_view.php:9)
+Stack trace:
+#0 D:\phpserver\www\framework\gii\CCodeGenerator.php(163): AweCrudCode->prepare()
+#1 D:\phpserver\www\framework\gii\CCodeGenerator.php(64): AweCrudGenerator->prepare()
+#2 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): AweCrudGenerator->actionIndex()
+#3 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\phpserver\www\framework\web\CController.php(287): AweCrudGenerator->runAction()
+#5 D:\phpserver\www\framework\web\CController.php(266): AweCrudGenerator->runActionWithFilters()
+#6 D:\phpserver\www\framework\web\CWebApplication.php(283): AweCrudGenerator->run()
+#7 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#8 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/gii/AweCrud
+in D:\phpserver\www\app\protected\extensions\awegen\AweCrud\templates\default\_view.php (9)
+in D:\phpserver\www\app\index.php (13)
+2012/12/26 12:38:56 [error] [php] Use of undefined constant city_id - assumed 'city_id' (D:\phpserver\www\app\protected\views\city\_view.php:4)
+Stack trace:
+#0 D:\phpserver\www\framework\zii\widgets\CListView.php(260): CityController->renderFile()
+#1 D:\phpserver\www\framework\zii\widgets\CBaseListView.php(161): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 D:\phpserver\www\framework\zii\widgets\CBaseListView.php(144): preg_replace_callback()
+#4 D:\phpserver\www\framework\zii\widgets\CBaseListView.php(129): CListView->renderContent()
+#5 D:\phpserver\www\framework\web\CBaseController.php(174): CListView->run()
+#6 D:\phpserver\www\app\protected\views\city\index.php(17): CityController->widget()
+#7 D:\phpserver\www\framework\web\CBaseController.php(127): require()
+#8 D:\phpserver\www\framework\web\CBaseController.php(96): CityController->renderInternal()
+#9 D:\phpserver\www\framework\web\CController.php(870): CityController->renderFile()
+#10 D:\phpserver\www\framework\web\CController.php(783): CityController->renderPartial()
+#11 D:\phpserver\www\app\protected\controllers\CityController.php(34): CityController->render()
+#12 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): CityController->actionIndex()
+#13 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CityController->runAction()
+#15 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 D:\phpserver\www\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#17 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CityController->filterAccessControl()
+#18 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#19 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#20 D:\phpserver\www\framework\web\CController.php(266): CityController->runActionWithFilters()
+#21 D:\phpserver\www\framework\web\CWebApplication.php(283): CityController->run()
+#22 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#23 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/city/
+in D:\phpserver\www\app\protected\views\city\_view.php (4)
+in D:\phpserver\www\app\protected\views\city\index.php (17)
+in D:\phpserver\www\app\protected\controllers\CityController.php (34)
+2012/12/26 12:39:51 [error] [php] Undefined variable: data (D:\phpserver\www\app\protected\extensions\awegen\AweCrud\templates\default\_view.php:9)
+Stack trace:
+#0 D:\phpserver\www\framework\gii\CCodeGenerator.php(163): AweCrudCode->prepare()
+#1 D:\phpserver\www\framework\gii\CCodeGenerator.php(64): AweCrudGenerator->prepare()
+#2 D:\phpserver\www\framework\web\actions\CInlineAction.php(50): AweCrudGenerator->actionIndex()
+#3 D:\phpserver\www\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\phpserver\www\framework\web\CController.php(287): AweCrudGenerator->runAction()
+#5 D:\phpserver\www\framework\web\CController.php(266): AweCrudGenerator->runActionWithFilters()
+#6 D:\phpserver\www\framework\web\CWebApplication.php(283): AweCrudGenerator->run()
+#7 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#8 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpserver\www\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/app/index.php/gii/AweCrud
+in D:\phpserver\www\app\protected\extensions\awegen\AweCrud\templates\default\_view.php (9)
+in D:\phpserver\www\app\index.php (13)
+2012/12/26 12:40:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view/view".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('view/view')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/view/1
+HTTP_REFERER=http://localhost/app/index.php/city/
+---
+2012/12/26 13:15:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('city/view/0/cit...')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/city/view/0/city_id
+HTTP_REFERER=http://localhost/app/index.php/city/
+---
+2012/12/26 13:39:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view/view".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('view/view')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/view/1
+HTTP_REFERER=http://localhost/app/index.php/city/
+---
+2012/12/26 13:40:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view/view".' in D:\phpserver\www\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('view/view')
+#1 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpserver\www\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/app/index.php/view/1
+HTTP_REFERER=http://localhost/app/index.php/city/
+---
+2012/12/26 13:41:45 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('city/view')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/city/view?1
+HTTP_REFERER=http://localhost/app/index.php/city/
+---
+2012/12/26 13:44:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('state/view/stat...')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/state/view/state_id/1
+HTTP_REFERER=http://localhost/app/index.php/city/view/id/1
+---
+2012/12/26 13:44:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\phpserver\www\framework\web\CController.php:337
+Stack trace:
+#0 D:\phpserver\www\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\phpserver\www\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\phpserver\www\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\phpserver\www\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\phpserver\www\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\phpserver\www\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\phpserver\www\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\phpserver\www\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpserver\www\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\phpserver\www\framework\web\CWebApplication.php(142): CWebApplication->runController('city/view/city_...')
+#10 D:\phpserver\www\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpserver\www\app\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/app/index.php/city/view/city_id/1
+HTTP_REFERER=http://localhost/app/index.php/city
+---
